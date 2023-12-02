@@ -309,3 +309,7 @@
 03-Dec-2023 02:36:40.692 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor 배치 descriptor [C:\app\Java\spring2311\web_study\maven_study01\src\main\webapp\conf\Catalina\localhost\maven_study01.xml]의 배치가 [811] 밀리초 내에 완료되었습니다.
 03-Dec-2023 02:36:40.708 INFO [main] org.apache.coyote.AbstractProtocol.start 프로토콜 핸들러 ["http-nio-3000"]을(를) 시작합니다.
 03-Dec-2023 02:36:40.755 INFO [main] org.apache.catalina.startup.Catalina.start 서버가 [1025] 밀리초 내에 시작되었습니다.
+03-Dec-2023 02:49:00.100 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause 프로토콜 핸들러 ["http-nio-3000"]을(를) 일시 정지 중
+03-Dec-2023 02:49:00.104 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal 서비스 [Catalina]을(를) 중지시킵니다.
+03-Dec-2023 02:49:00.130 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop 프로토콜 핸들러 ["http-nio-3000"]을(를) 중지시킵니다.
+03-Dec-2023 02:49:00.149 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy 프로토콜 핸들러 ["http-nio-3000"]을(를) 소멸시킵니다.
