@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="24911823-fd62-447a-b804-398227b914e8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../2.서블릿&amp;JSP/.idea/2. 서블릿&amp;JSP.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/3.스프링.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/commons/exceptions/BadRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/commons/validators/RequiredValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/commons/validators/Validator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/config/AppCtx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/main/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/main/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/main/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/main/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/main/Ex05.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/main/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/Greeter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/JoinValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/MemberDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/joinService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exam02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam/A.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam/B.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam/C.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam/D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam02/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam02/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam02/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam02/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam02/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam02/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam02/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam03/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam03/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam03/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam03/SimpleCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam04/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam04/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam04/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam04/SimpleCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam05/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam05/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam05/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam05/Transportation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../img/Inheritance.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../img/Inheritance2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../img/method override.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../수업 정리/JSP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../수업 정리/Spring.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../수업 정리/enums.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/.idea/2. 서블릿&amp;JSP.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam01/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam01/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam01/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam01/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam01/src/main/java/org/choongang/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam01/src/test/java/org/choongang/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam01/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam01/Ex01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam01/Ex02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam01/Ex03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam01/Ex04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam01/Ex05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam01/Ex06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam01/Schedule.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam01/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam02/Ex01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam02/Ex02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam02/Ex04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam02/Ex05.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam02/Ex06.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam02/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam03/A.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam03/B.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam03/C.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam03/D.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam03/Ex01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam03/Ex02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam03/Ex03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam03/Ex04.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam04/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam04/Book2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam04/Book3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam04/Ex01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam04/Ex02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/java/exam04/Ex03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/resources/archetype-resources/src/main/java/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam02/src/main/resources/archetype-resources/src/test/java/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/app/src/main/java/exam03/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/app/src/test/java/exam03/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam03/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/src/main/java/servlets/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2. 서블릿&amp;JSP/exam04/src/main/webapp/index_ps.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/웹기초.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/웹기초.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2Z6a6e48o27QmidBJzaG41agzRP" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.exam05.Ex03">
+    <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam04.Ex01" />
+      <module name="exam02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exam04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exam02.Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam02.Ex02" />
+      <module name="exam02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exam02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exam03.Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam03.Ex01" />
+      <module name="exam02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exam03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exam05.Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam05.Ex01" />
+      <module name="exam02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exam05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="exam05.Ex03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam05.Ex03" />
+      <module name="exam02" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exam05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.exam05.Ex03" />
+        <item itemvalue="Application.exam05.Ex01" />
+        <item itemvalue="Application.Ex01" />
+        <item itemvalue="Application.exam03.Ex01" />
+        <item itemvalue="Application.exam02.Ex02" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="24911823-fd62-447a-b804-398227b914e8" name="Changes" comment="" />
+      <created>1701744812674</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701744812674</updated>
+    </task>
+    <servers />
+  </component>
+</project>
