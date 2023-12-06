@@ -18,19 +18,19 @@
    스프링 배치
 
 
-# 스프링 프로젝트 생성하기
+## 스프링 프로젝트 생성하기
    spring-context 의존성
 
 
 
-# 스프링은 객체 컨테이너
+## 객체 컨테이너
    IoC - Inversion Of Control : 제어의 역전
    - 개발자가 해야되는 객체의 관리 -> 스프링 컨테이너가 대신 수행
 
-    - 다양한 방식으로 객체 관리
+   - 다양한 방식으로 객체 관리
         1) 모든 관리 객체가 싱글턴 객체(동일 객체)
 
-# 스프링 DI(Dependency Injection - 의존주입)
+## 스프링 DI(Dependency Injection - 의존주입)
 
 0) 의존(Dependency)
     - 협동, 상호작용
@@ -42,8 +42,9 @@
 
 클래스 클래스 : 클래스라고 하는 정보가 담겨있는 객체
 
-` AnnotationConfigApplicationContext ctx = new
-AnnotationConfigApplicationContext(AppCtx.class);  `
+``` java
+AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(AppCtx.class);  
+```
 
 애노태이션으로 설정?담는 스프링 컨테이너 <br>
 ApplicationContext : 스프링 컨테이너 : 객체가 담겨있고 필요할 때마다 꺼내준다.<br>
@@ -88,11 +89,13 @@ class파일(컴파일) 실행중에 런타임 체크?
    - 예외발생 -> 중단
    - 서비스 중단을 막기 위해서 -> 적절한 예외 처리 O
 
-`try{
+``` java
+try{
    // 예외가 발생할 가능성이 있는 코드
 } catch (예외 객체) {
    // 예외에 대한 후속 처리
-}`
+}
+```
 
 생성자만 예외처리해도 된다.?
 
@@ -162,3 +165,112 @@ method override : 본인거 먼저 나오고 없으면 거슬러 올라가면서
 - 제한적인 클래스의 일종
 
 implements : 구현하다
+
+상속보단 구성의 확장이 유리하다. <br>
+public  JoinValidator(MemberDao memberDao) { <br>
+this.memberDao = memberDao;<br>
+}
+
+전략 패턴 : 변화에는 닫혀있고(캡슐화), 확장에는 열린 구조, 통제를 하기 위한 구조
+
+자바 기초 Wrapper 클래스
+Optional 클래스 - JDK 8
+- Wrpper 클래스 : 기본형, 객체가 되야 기능을 쓸수 있다.
+- NPE(NullPointException)의 다양한 처리 지원
+
+### 자료형
+기본 자료형 : 숫자를 저장하는 자료형
+  - byte - Byte
+  - short - Short
+  - int - Integer
+  - long - Long
+  - float -Float
+  - double - Double
+  - char(2,3)
+
+참조 자료형 : 주소를 저장하는 자료형
+
+```java
+class Integer ... {
+   ...
+   private final int value;
+   ...
+}
+```
+싱글톤 패턴(SingleTon)
+1. 하나의 객체만 생성하고 공유(static)
+   1) 기본 생성자 private 정의,  통제가 안되는건 막는다.
+   2) 클래스 내부에서 객체 생성
+2. 필요할때만 처음 객체를 생성 -> 공유
+
+this는 생성된 객체를 참조하는 참조 변수로 모든 인스턴스 메서드에는 지역변수인 this가 있다.<br>
+static메서드만 this가 존재하지 않는다.
+
+의존하는 객체는 내부에서 하는것보다 외부에서 주입하는게 통제하는데 좋다.<br>
+외부에서 주입하면 객체 변경이 용이하다. (한번에 바꿀수 있다.)
+
+회원가입
+joinService : validate  - member(데이터형태 객체) - memberDao(데이터에 접근) 를 의존한다.
+하나의 기능을 위해서 객체를 의존한다.
+캡슐화 : 감춰놓고 통제
+
+
+
+# 스프링 DI 설정 및 사용
+1. 스프링을 이용한 객체 조립과 사용
+2. DI 방식 1 : 생성자 방식
+3. DI 방식2 : 세터 메서드 방식
+4. @Configuration : 설정 클래스임을 알려주는 애노테이션
+5. @Bean : 뭐 해달라고 알려주는거
+   - getBean : 필요한 클래스를 찾아 오는 변수
+
+6. 두 개 이상의 설정 파일 사용하기
+1) 생성자 매개변수
+2) @Import
+
+
+의존 자동 주입
+1. @Autowired
+- 기본값 : required true
+2. 일치하는 빈이 없는 경우
+- @Autowired (required = false)
+  - 의존하는 Bean이 없는 경우 setter 메서드를 호출 X
+- 의존 객체 앞에 @Nullable 애노테이션을 추가
+  - 의존하는 Bean이 없는 경우 setter 메서드 호출 -> 의존 객체를 nulll로 대입
+3. @Qualifier
+- 일치하는 빈이 여러개 있을 경우 -> 예외 발생
+- 해결방법
+  1) 순서를 정한다. @Primary : 동일한 자료형의 빈이 있는 경우 가장 우선순위
+  2) 적용할 빈의 이름을 한정 @Qualifier
+4. 빈 이름과 기본 한정자
+5. @Autowired 애노테이션의 필수 여부
+
+컴포넌트 스캔
+1. @Component
+2. @ComponentScan
+3. 기본 스캔 대상
+4. 컴포넌트 스캔에 따른 충돌 처리
+1) 빈 이름 충돌
+2)  수동 등록한 빈과 충돌
+3) excludeFilters
+
+빈 라이프 사이클과 범위
+1. 컨테이너 초기화 : 빈 객체의 생성, 의존 주입, 초기화
+
+2. 컨테이너 종료 : 빈 객체의 소멸
+
+3. 빈 객체의 라이프 사이클
+1) 객체 생성 -> 의존 설정 -> 초기화 -> 소멸
+2) InitializingBean
+3) DisposableBean
+
+4.  빈 객체의 초기화와 소멸 : 커스텀 메서드
+1) initMethod
+2) destroyMethod
+
+5. 빈 객체의 생성과 관리 범위
+   @Scope 
+
+
+
+리터럴 상수?

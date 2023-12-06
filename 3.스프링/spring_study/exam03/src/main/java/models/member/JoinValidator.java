@@ -3,10 +3,16 @@ package models.member;
 import commons.exceptions.BadRequestException;
 import commons.validators.RequiredValidator;
 import commons.validators.Validator;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class JoinValidator implements Validator<Member>, RequiredValidator {
 
+    @Autowired
+    @Qualifier ("memberDao")
     private MemberDao memberDao;
+
+    public JoinValidator () {}
 
     // 상속보단 구성의 확장이 유리하다.
     // 생성자를 통한 주입
