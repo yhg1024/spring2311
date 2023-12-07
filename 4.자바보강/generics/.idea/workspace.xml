@@ -5,60 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="366e495e-c62c-4f51-a41e-ef282be0dbdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/aopex/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/aopex/RecCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/config/AppCtx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/config/ProxyCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/proxyex/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/proxyex/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/proxyex/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/proxyex/ImpCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/proxyex/ProxyCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam05/src/main/java/proxyex/RecCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../annotation/annotationex/src/exam02/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../annotation/annotationex/src/exam02/MyAnno2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generics.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam01/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam01/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam01/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam01/Pear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam02/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam02/Box.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam02/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam02/Fruit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam02/Pear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam03/Apple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam03/FruitBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam03/Juicier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam03/Pear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../수업 정리/proxy.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../수업 정리/제네릭스.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam03/src/main/java/models/member/ListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam03/src/main/java/models/member/ListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/src/main/java/config/AppCtx.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/src/main/java/config/AppCtx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/src/main/java/main/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/src/main/java/main/Ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/src/main/java/models/member/JoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/src/main/java/models/member/JoinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/src/main/java/models/member/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam04/src/main/java/models/member/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/Spring.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/annotation.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/annotation.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Wrapper/src/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wrapper/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wrapper/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../수업 정리/JSP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/JSP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../수업 정리/객체지향.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/객체지향.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2ZCvBlaZ5c2xqwoB2WieunPYz3w" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -87,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/yhg1024/4.자바보강/generics/src/exam03"
+    "last_opened_file_path": "C:/app/Java/spring2311/4.자바보강/annotation"
   }
 }]]></component>
   <component name="RecentsManager">

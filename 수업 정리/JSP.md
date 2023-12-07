@@ -81,14 +81,14 @@ JSP 내장객체 - _jspService 지역변수
 암기!
 속성(데이터)을 관리하는 4가지 객체
 
-PageContext pageContext : JSP 페이지 내에서 유지되는 데이터 설정
-HttpServletRequest request : 요청이 처리되는 동안 유지되는 데이터
-HttpSession session : 세션이 유지되는 동안 데이터
-ServletContext application : 애플리케이션이 실행되는 동안 유지되는 데이터
+PageContext pageContext : JSP 페이지 내에서 유지되는 데이터 설정<br>
+HttpServletRequest request : 요청이 처리되는 동안 유지되는 데이터<br>
+HttpSession session : 세션이 유지되는 동안 데이터<br>
+ServletContext application : 애플리케이션이 실행되는 동안 유지되는 데이터<br>
 
-	void setAttribute(String name, Object value); : 속성을 추가, 변경 // name은 vlaue를 찾기위한 이름, object 다 가능
-	Object getAttribute(String name) : 속성 조회
-	void removeAttribute(String name) : 속성 제거
+void setAttribute(String name, Object value); : 속성을 추가, 변경 // name은 vlaue를 찾기위한 이름, object 다 가능<br>
+Object getAttribute(String name) : 속성 조회<br>
+void removeAttribute(String name) : 속성 제거
 
 데이터 유지 범위
 pagContext < request < session < application
@@ -111,14 +111,17 @@ WEB-INF의 하위 폴더에 넣으면 뷰형태로 직접 접근 못하게 막�
 
 3. 필터 클래스의 작성, 설치, 등록
    web.xml
-   <filter>
-   <filter-name>..</filter-name>
-   <filter-class>...</filter-class>
-   </filter>
-   <filter-mapping>
-   <filter-name>...</filter-name>
-   <url-pattern>...</url-pattern>
-   </filter-mapping>
+```xml
+<filter>
+    <filter-name>..</filter-name>
+    <filter-class>...</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>...</filter-name>
+    <url-pattern>...</url-pattern>
+</filter-mapping>
+
+```
 
    - 필터 체인(filter chain)
 
