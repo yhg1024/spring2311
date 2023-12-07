@@ -55,6 +55,8 @@ AnnotationConfig : 설정방식<br>
 AppCtx.class : 정보(설정)이 담긴 클래스 클래스<br>
 @Configuration : 설정클래스라고 알려주는 애노테이션<br>
 
+스프링 컨테이너 : 객체관리
+
 static : 객체를 안만든다.
 
 ! 중요
@@ -229,8 +231,15 @@ joinService : validate  - member(데이터형태 객체) - memberDao(데이터�
 2) @Import
 
 
-의존 자동 주입
-1. @Autowired
+### 의존 자동 주입
+1. @Autowired : 스프링에서 정의한 애노테이션
+    - @Resource, @Inject : 자바표준 - 의존성 자동 주입
+    - 적용 범위
+      1) 멤버 변수 위에
+      2) setter 메서드 위에
+      3) Optional 내부 객체
+      4) @Autowired 애노테이션을 사용하지 않고 자동 주입 방법
+        - 생성자 매개변수 정의 / 기본 생성자X -> 컴포넌트 스캔에서 적용
 - 기본값 : required true
 2. 일치하는 빈이 없는 경우
 - @Autowired (required = false)
@@ -245,10 +254,20 @@ joinService : validate  - member(데이터형태 객체) - memberDao(데이터�
 4. 빈 이름과 기본 한정자
 5. @Autowired 애노테이션의 필수 여부
 
-컴포넌트 스캔
+### 컴포넌트 스캔
 1. @Component
 2. @ComponentScan
 3. 기본 스캔 대상
+   - @Component
+   - @Service : 
+- 특정 기능, 역활과 연관된 애노테이션
+  - @Configuration : 설정 클래스임을 알려주는 애노테이션
+  - @Repository : 저장소
+  - @Controller : WebMVC 프레임 워크
+  - @RestController : WebMVC 프레임 워크
+  - @ControllerAdvice : WebMVC 프레임 워크
+  - @RestControllerAdvice : WebMVC 프레임 워크
+  - @Aspect : AOP 관련
 4. 컴포넌트 스캔에 따른 충돌 처리
 1) 빈 이름 충돌
 2)  수동 등록한 빈과 충돌

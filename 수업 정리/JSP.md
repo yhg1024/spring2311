@@ -1,11 +1,21 @@
-지네릭스
-열거형, 애너테니션
-람다식, 스트림
-입출력
+extends HttpServlet 를 상속받으면 servlet 클래스가 된다.
 
-JSP
--JSTL - FMT/FUNCTIONS
-- 커스텀 액션
+등록 설정 파일 : webapp - WEB-INF - web.xml : 해당하는 이름을 가지고 클래스가 객체가 되어있으면 요청 메소드 실행
+
+doGet(HttpServletRequest req, HttpServletResponse resp)
+: 요청이 들어오면 들어간다. 요청헤더와 요청 바디정보를 가지고 req 객체를 만들어준다.<br>
+요청이 들어오면 응답 resp를 서버에서 만든다.
+<img src="../img/servlet.png">
+get은 주로 검색의 용도
+요청을 하면 서버에 도달 - web.xml 파일에 정의 된 주소를 보고 - 각각에 서블릿 객체를 찾는다. - 요청방식에 따라 get이면 doGet을 호출<br>
+호출할때 : 요청과 응답에 대한 객체를 요청 헤더와 요청 바디에 대한 정보를 가지고 만들어준다.<br>
+이 목적은 응답하는것이다. response 객체도 TOMCAT 서버가 만들어서 호출할때 매개변수로 투입해서 실행한다.<br>
+구현 클래스는 TOMCAT 서버가 되어있다. 우리는 API만 알고 있으면 된다.
+
+HttpServletRequest : 요청 헤더와 요청 바디에 대한 정보<br> 
+HttpServletResponse : 응답 헤더를 추가 하거나 출력
+
+매서드 재정의 불러오기 : ctrl + O, 마우스 오른쪽 키 - Generate - Override Methods - doGet, doPost
 
 JSP
 스크립트 태그
@@ -54,6 +64,7 @@ C (Controller) : 요청 응답의 중재자 -> 서블릿
 
 암기!
 JSP 내장객체 - _jspService 지역변수
+- request, response, pageContext, config, out, application, session
 
 1) HttpServletRequest request
 2) HttpServletResponse response

@@ -1,13 +1,14 @@
 package models.member;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
 public class JoinService {
+    @Autowired
     private  MemberDao memberDao;
+    @Autowired
     private JoinValidator validator;
-    
-    public JoinService(MemberDao memberDao, JoinValidator validator) { // 의존하는 객체를 넣는다.
-        this.memberDao = memberDao;
-        this.validator = validator;
-    }
     
     public void join(Member member) {
         // 데이터 검증

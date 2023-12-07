@@ -3,10 +3,12 @@ package models.member;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.lang.Nullable;
+import org.springframework.stereotype.Service;
 
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+@Service
 public class ListService {
 
 
@@ -20,9 +22,11 @@ public class ListService {
     }
 
     @Autowired
-    public void setMemberDao(@Qualifier("memberDao") MemberDao memberDao) {
+    public void setMemberDao(MemberDao memberDao) {
+        // setMemberDao(@Qualifier("memberDao") MemberDao memberDao)
+        // 주입받는 객체가 매개변수로 들어가 있어서 그 앞에다 쓴거다
         // 통제하기 위해
-        // //stter를 통한 주입
+        // //setter를 통한 주입
         this.memberDao = memberDao;
     }
 

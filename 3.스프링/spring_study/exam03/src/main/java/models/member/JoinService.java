@@ -2,10 +2,12 @@ package models.member;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
+@Service
 public class JoinService {
-    @Autowired // 의존성 자동주입 스프링한태 알려줌
-    @Qualifier("memberDao")
+    @Autowired // 의존성 자동주입 스프링한태 알려줌, 담겨있는 Bean이 있으면 담아줘
+    // @Qualifier("memberDao")
     private  MemberDao memberDao;
 
     @Autowired

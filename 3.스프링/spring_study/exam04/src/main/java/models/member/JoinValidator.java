@@ -4,23 +4,13 @@ import commons.exceptions.BadRequestException;
 import commons.validators.RequiredValidator;
 import commons.validators.Validator;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class JoinValidator implements Validator<Member>, RequiredValidator {
 
     @Autowired
-    // @Qualifier ("memberDao") // 동일한 Dao가 두개라서 어떤걸 참고하라고 알려준다.
     private MemberDao memberDao;
-
-    public JoinValidator () {}
-
-    // 상속보단 구성의 확장이 유리하다.
-    // 생성자를 통한 주입
-    public  JoinValidator(MemberDao memberDao) {
-        this.memberDao = memberDao;
-    }
 
     public void validate(Member member) {
 

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="74fcae7a-a4b9-4e90-9993-f4741461ffd6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/config/AppCtx4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../img/servlet.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../수업 정리/객체지향.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.서블릿&amp;JSP/exam04/src/main/java/servlets/BoardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2.서블릿&amp;JSP/exam04/src/main/java/servlets/BoardServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../2.서블릿&amp;JSP/exam04/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../2.서블릿&amp;JSP/exam04/src/main/webapp/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam01/src/main/java/models/member/JoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/JoinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam03/src/main/java/config/AppCtx3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/src/main/java/config/AppCtx3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam03/src/main/java/main/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/src/main/java/main/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam03/src/main/java/models/member/JoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/JoinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam03/src/main/java/models/member/JoinValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/JoinValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam03/src/main/java/models/member/ListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/ListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam03/src/main/java/models/member/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/MemberDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/JSP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/JSP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/Spring.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/웹기초.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/웹기초.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2ZC2StyRuxHwtKwIQio5aQLxTD5" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74fcae7a-a4b9-4e90-9993-f4741461ffd6" name="Changes" comment="" />
+      <created>1701911745604</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701911745604</updated>
+    </task>
+    <servers />
+  </component>
+</project>
