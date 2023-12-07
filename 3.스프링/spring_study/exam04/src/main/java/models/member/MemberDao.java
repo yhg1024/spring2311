@@ -1,5 +1,6 @@
 package models.member;
 
+import config.ManualBean;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -7,8 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+// @ManualBean // 스캔 범위에서 배제
 @Repository // 데이터 저장소
-public class MemberDao {
+public class MemberDao { // memberDao  빈의 이름
     private  static Map<String, Member> members = new HashMap<>();
 
     // 아이디 추가 (가입)

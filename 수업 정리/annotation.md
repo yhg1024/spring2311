@@ -2,7 +2,7 @@
 1. 에너테이션이란?
 - 프로그램의 소스코드 안에 다른 프로그램을 위한 정보를 미리 약속된 형식으로 포함시킨 것이 애너테이션이다.
 - 주석, 주해, 설명
-- 정보 전달
+- 정보 전달 <br>
   @interface 애노테이션명 {
 
 }
@@ -19,20 +19,25 @@
   ...
 
 3. 메타 애너테이션
-- 애너테이션을 위한 애너테이션
+- 애너테이션을 만들때 필요한 애너테이션
 - 애너테이션을 붙이는 애너테이션으로 애너테이션을 정의할 때 애너테이션의 적용대상(target)이나 유지기간(retention)등을 지정하는데 사용된다.
 
 - @Retention (중요!!)
+  - 정보 전달 시점
   - 애너테이션이 유지되는 기간을 지정하는데 사용된다
   - RetentionPolicy (애너테이션 유지정책)
-      - .SOURCE : 자바 코드(소스 파일)에는 존재(java) ,클래스파일에는 존재하지 않음 -> 컴파일 이후에 제거
-        -> 컴파일 시에 정보가 전달(컴파일러에게 전달)
-      - .CLASS : 자바 코드에도 존재(java), 클래스 파일에도 존재(class)
-        -> 기본값, 정보 전달 X
-      - .RUNTIME : 자바 코드에도 존재(java), 클래스 파일에도 존재(class)
-        -> 실행 중에 정보가 전달
+    - .SOURCE : 자바 코드(소스 파일)에는 존재(java) ,클래스파일에는 존재하지 않음 -> 컴파일가 정보를 확인, 이후에 제거
+      -> 컴파일 시에 정보가 전달(컴파일러에게 전달)
+    - .CLASS(기본) : 자바 코드에도 존재(java), 클래스 파일에도 존재(class)
+      -> 기본값, 정보 전달 X - 사용거의x
+    - .RUNTIME : 자바 코드에도 존재(java), 클래스 파일에도 존재(class)
+      -> 실행 중에 정보가 전달
 - @Target : 애노테이션을 적용할 위치
-
+  - ElementType
+    - TYPE : 클래스명, 인터페이스명, Enum 상수명
+    - FIELD : 멤버 변수
+    - PARAMETER : 매개변수
+    - METHOD
 ``` java
 @Target({ElementType.TYPE, ElementType.FIELD, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
@@ -40,9 +45,13 @@
 
 4. 사용자 정의 애노테이션
 
+        interface 애노테이션명 extends java.lang.annotation.Annotation {
 
-interface 애노테이션명 extends java.lang.annotation.Annotation {
-
-}
+        }
 
 - 모든 애너테이션의 상위 클래스는 Annotation이다. 그러나 애너테이션은 상속이 허용되지 않으므로 명시적으로 Annotation을 상위 클래스로 지정할 수 없다.
+
+
+클래스는 코드
+클래스 클래스 : 클래스라고 하는 변수가 담겨있는 객체, 정보가 만들어지는 객체 , 메소드가 뭔지 생성자가 뭔지, 인터페이스가 뭐가 구현되는지
+애노테이션도 클래스 정의의 일부분 

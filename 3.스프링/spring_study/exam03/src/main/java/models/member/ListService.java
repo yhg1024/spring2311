@@ -16,6 +16,13 @@ public class ListService {
 
     private DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yy.MM.dd");
 
+    /*
+    자동 주입대상이 없을 경우 메서드 자체가 호출되지 않음
+    @Autowired(required = false)
+    public void setDateTimeFormatter(Optional<DateTimeFormatter>dateTimeFormatter){
+           this.dataTimeFormatter = dateTimeFormatter;
+    }
+    */
     @Autowired  // (required = false)
     public void setFormatter(@Nullable DateTimeFormatter formatter) {
         this.formatter = formatter;
