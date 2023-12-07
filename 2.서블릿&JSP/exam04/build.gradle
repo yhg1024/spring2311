@@ -6,7 +6,7 @@ group = 'org.choongang'
 version = '1.0-SNAPSHOT'
 
 java {
-    sourceCompatibility = '17'
+    sourceCompatibility = '21'
 }
 
 repositories {

@@ -5,11 +5,22 @@ import commons.validators.RequiredValidator;
 import commons.validators.Validator;
 
 public class JoinValidator implements Validator<Member>, RequiredValidator {
+
+    private MemberDao memberDao;
+
+    // 상속보단 구성의 확장이 유리하다.
+    // 생성자를 통한 주입
+    public  JoinValidator(MemberDao memberDao) {
+        this.memberDao = memberDao;
+    }
+
     public void validate(Member member) {
+
         // 검증하면 좋은거 : 틀대로 하니까 예상 가능한 소스
         // 인터페이스 목적은 설계하려고, 설계는 통일성이 중요하다.
         // 추상클래스는 설계에 좋지 않다.
         // soild : 객체지향 설계 원칙
+
 
         /* 필수 항목 검증(아이디, 비밀번호, 비밀번호 확인, 회원명) */
         String userId = member.getUserId();
@@ -22,5 +33,11 @@ public class JoinValidator implements Validator<Member>, RequiredValidator {
         checkRequired(userPw, new BadRequestException("비밀번호를 입력하세요."));
         checkRequired(confirmPw, new BadRequestException("비밀번호를 확인하세요."));
         checkRequired(userNm, new BadRequestException("회원명을를 입력하세요."));
+
+        // 아이디가 이미 등록되어 있는지 체크
+        checkFalse(memberDao.exists(userId), new BadRequestException("이미 등록된 아이디입니다."));
+
+        // 비밀번호, 비밀번호 확인시 일치 여부
+        checkTrue(userPw.equals(confirmPw), new BadRequestException("비밀번호가 일치하지 않습니다."));
     }
 }

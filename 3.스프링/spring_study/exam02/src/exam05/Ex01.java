@@ -4,8 +4,9 @@ public class Ex01 {
     public static void main(String[] args) {
         Transportation trans = Transportation.SUBWAY;
 
+
         switch (trans) {
-            case SUBWAY :
+            case SUBWAY : // Transportation.SUBWAY라고 쓸 수 없다.
                 System.out.println("지하철");
                 break;
             case BUS:
