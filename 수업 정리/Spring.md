@@ -57,7 +57,7 @@ AppCtx.class : 정보(설정)이 담긴 클래스 클래스<br>
 
 스프링 컨테이너 : 객체관리
 
-static : 객체를 안만든다.
+
 
 ! 중요
 BeanFactory : 
