@@ -1,5 +1,6 @@
 docs/
 apache-maven-3.9.5/
+dbeaver/
 gradle-8.5/
 apache-tomcat-10.1.16/
 # Ignore Gradle project-specific cache directory
