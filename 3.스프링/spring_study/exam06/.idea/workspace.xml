@@ -4,9 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="295b5a82-43b5-4aa4-a263-9e6f841fbbc2" name="Changes" comment="">
+    <list default="true" id="9f1792cd-b015-4e74-96ea-1ef73c49bad2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/MyResource.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../../수업 정리/db.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam05/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +50,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -42,38 +58,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2ZCdEjp3069aAmad5UDaRZKvr37" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2ZFKvhOaI1x5sMEygTx0eN0LVKP" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/yhg1024/3.스프링/spring_study/exam05/src/main/java/aopex",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\yhg1024\3.스프링\spring_study\exam05\src\main\java\aopex" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Application.main.Ex02">
+  <component name="RunManager" selected="Application.Ex04">
     <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="proxyex.Ex01" />
-      <module name="exam05.main" />
+      <option name="MAIN_CLASS_NAME" value="exam01.Ex01" />
+      <module name="exam06.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="proxyex.*" />
+          <option name="PATTERN" value="exam01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,11 +87,11 @@
       </method>
     </configuration>
     <configuration name="Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="proxyex.Ex02" />
-      <module name="exam05.main" />
+      <option name="MAIN_CLASS_NAME" value="exam01.Ex02" />
+      <module name="exam06.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="proxyex.*" />
+          <option name="PATTERN" value="exam01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main.Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Ex01" />
-      <module name="exam05.main" />
+    <configuration name="Ex04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam01.Ex04" />
+      <module name="exam06.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="exam01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main.Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Ex02" />
-      <module name="exam05.main" />
+    <configuration name="Ex05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="exam01.Ex05" />
+      <module name="exam06.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="main.*" />
+          <option name="PATTERN" value="exam01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.main.Ex02" />
-        <item itemvalue="Application.main.Ex01" />
+        <item itemvalue="Application.Ex04" />
+        <item itemvalue="Application.Ex05" />
         <item itemvalue="Application.Ex02" />
         <item itemvalue="Application.Ex01" />
       </list>
@@ -132,26 +137,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="295b5a82-43b5-4aa4-a263-9e6f841fbbc2" name="Changes" comment="" />
-      <created>1701929888626</created>
+      <changelist id="9f1792cd-b015-4e74-96ea-1ef73c49bad2" name="Changes" comment="" />
+      <created>1702012621598</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1701929888626</updated>
+      <updated>1702012621598</updated>
     </task>
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
