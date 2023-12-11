@@ -5,25 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f1792cd-b015-4e74-96ea-1ef73c49bad2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/exam01/MyResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/db.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam05/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam05/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/AppCtx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/DbConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/models/member/Member.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/jdbctest/jdbcTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/exam01/Ex05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exam01/Ex05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/db.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/jdbc.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +59,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/app/Java/spring2311/3.스프링/spring_study/exam06",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Ex04">
+  <component name="RunManager" selected="JUnit.jdbcTemplateTest.connectionTest">
     <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="exam01.Ex01" />
       <module name="exam06.main" />
@@ -125,8 +118,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="jdbcTemplateTest.connectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exam06.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jdbctest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jdbctest" />
+      <option name="MAIN_CLASS_NAME" value="jdbctest.jdbcTemplateTest" />
+      <option name="METHOD_NAME" value="connectionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.jdbcTemplateTest.connectionTest" />
         <item itemvalue="Application.Ex04" />
         <item itemvalue="Application.Ex05" />
         <item itemvalue="Application.Ex02" />

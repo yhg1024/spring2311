@@ -15,7 +15,7 @@ public class Ex05 {
 
         try (Connection conn = DriverManager.getConnection(url, userName, password);
              PreparedStatement pstmt = conn.prepareStatement(sql);
-             ResultSet rs = pstmt.executeQuery()) {
+             ResultSet rs = pstmt.executeQuery()) { // 결과 셋, 커서가 담겨있는, 커서를 이동하면서 하나씩 가져온다.
 
             while(rs.next()) {
                 long userNo = rs.getLong("USER_NO");

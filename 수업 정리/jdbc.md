@@ -113,7 +113,7 @@ try(해제할 자원 객체; 해제할 자원 객체...) {
 집합 (Set, Tuple) : 중복 x
 
 
-JdbcTemplate
+# JdbcTemplate
 1. 설치 및 설정
 1) spring-jdbc : JDBC API 개선 + 커넥션 풀 <br>
      ex) DriverManager -> 커넥션 x<br>
@@ -124,19 +124,32 @@ JdbcTemplate
         - 반응성, 성능 향상의 효과
         - 오랜시간 연결이 x -> DB와 연결 객체의 연결 x -> 오류
         - 연결 상태 체크
-
+            - setTestWhileIdle(boolean) : 커넥션이 풀에 유휴 상태로 있는 동안 검사할지 여부를 지정한다.
+            - setMinEvictableIdleTimeMillis(int) : 커넥션 풀에 유효 상태를 유지할 최초 시간을 밀리초 단위로 지정한다.
 + spring*-context
 + lombok
++ spring-test
 + servlet-api
 + servlet.j*sp-api
 + bcrypt
 2. DataSource 설정
+    - 초기화 단계 initioalizedBean
+    - 초기화 때 desposolBean
+    - 외부 소스, tomcat jdbc에서 제공하는 datasource인경우 인터페이스 추가 X
+    - 소멸직전의 호출할수 있는 distroy 메서드나 초기화 단계에 실행하는 init 메서드로 대신 설정가능
+    - @Bean(destroyMethod = "close")
+
 
 3. JdbcTemplate을 이용한 쿼리실행
 1) query()
 - List query(String sql, RowMapper rowMapper)
 - List query(String sql, Object[] args, RowMapper rowMapper)
 - List query(String sql, RowMapper rowMapper, Object... args)
+
+List 형태 : 완성된 데이터 형태로 반환
+
+Mapper : 변환 작업, 검색
+- DB에서 가져온 데이터를 가지고 원하는 데이터 객체로 변환
 
 2) queryForObject()
 
@@ -153,3 +166,29 @@ JdbcTemplate
 
 7. 트랜잭션 처리
 - @Transactional
+
+8. 로거 연동 
+- slf4j-api
+- logback-classic : 구현체
+
+로그 레벨
+- FATAL
+- ERROR 
+- WARN : 경고, 기능 문제 X, 향후 문제 가능성이 있는 경우
+
+정보성 로그
+- INFO
+- DEBUG
+- TRACE
+
+%d -> 날짜, 시간
+%5p -> 5자 내에서 로그 레벨을 출력
+%c{2} -> 패키지를 요약(한글자로 요략) + 클래스명
+%m -> 출력 메세지
+
+JDBC API
+- 조회 (SELECT)
+  - ResultSet executeQuery(..)
+- 변경(INSERT, UPDATE, DELETE)
+  - int executeUpdate(..) : 반영된 레크드 갯수가 반환값
+

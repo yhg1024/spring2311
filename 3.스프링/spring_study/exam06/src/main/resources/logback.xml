@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender"> <!--표준 출력-->
+        <encoder>
+            <pattern>%d %5p %c{2} - %m%n</pattern> <!--메세지를 어떻게 출력 할지, 날짜, 시간, -->
+        </encoder>
+    </appender>
+    <root level="INFO"> <!--기본 레벨, info 포함한 info 이상의 모든 log를 보여준다.-->
+        <appender-ref ref="stdout" />
+    </root>
+
+    <logger name="org.springframework.jdbc" level="TRACE" /> <!--특정 패키지에서 발생하는 메세지는 TRACE 이상으로-->
+</configuration>
