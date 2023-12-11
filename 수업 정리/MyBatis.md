@@ -49,7 +49,7 @@ MyBatis와 스프링 연동
    </mapper>
 ```
 
-<img src="../img/xml_IdMapping.png"><br>
+<img src="../img/xml_idMapping.png"><br>
 xml파일에서 동일한 명칭의 ID값을 찾아 매칭
  
 
