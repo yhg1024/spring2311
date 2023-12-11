@@ -141,7 +141,7 @@ try(해제할 자원 객체; 해제할 자원 객체...) {
 
 
 3. JdbcTemplate을 이용한 쿼리실행
-1) query()
+1) query() : 목록 데이터 조회
 - List query(String sql, RowMapper rowMapper)
 - List query(String sql, Object[] args, RowMapper rowMapper)
 - List query(String sql, RowMapper rowMapper, Object... args)
@@ -151,21 +151,36 @@ List 형태 : 완성된 데이터 형태로 반환
 Mapper : 변환 작업, 검색
 - DB에서 가져온 데이터를 가지고 원하는 데이터 객체로 변환
 
-2) queryForObject()
+2) queryForObject() : 단일 데이터 조회
 
-3) update()
+3) update() : 추가, 수정, 삭제
 - int update(String sql)
 - int update(String sql, Object... args)
 
 4. PreparedStatementCreator를 이용한 쿼리 실행
-5. INSERT 쿼리 실행 시 KeyHolder를 이용해서 자동 생성 키값 구하기
+5. INSERT 쿼리 실행 시 **KeyHolder**를 이용해서 자동 생성 키값 구하기
 6. 스프링의 익셉션 변환 처리
     - 각 연동 기술에 따라 발생하는 익셉션을 스프링이 제공하는 익셉션으로 변환함으로써 다음과 같이 구현 기술에 상관없이 동일한 코드로 익셉션을 처리할 수 있게 된다.
       SQLExcpetion, HibernateException, PersistenceException ->  DataAccessException
       (RuntimeException)
 
 7. 트랜잭션 처리
-- @Transactional
+- @Transactional : 연속된 쿼리, 클래스에 넣으면 모든 메서드가 트랜젝션 수동 관리, 특정 메서드의 연속된 쿼리가 있으면 메서드가 하나의 트렌젝션 단위가 된다.
+
+트랜젝션 : SQL 실행 단위(COMMIT 할때 까지)<br>
+COMMIT -> DB 영구 반영
+- autocommit -> true : 1개 SQL 실행시 자동 COMMIT
+
+트랜젝션을 수동 관리? @Transactional <br>
+conn.setAutocommit(false); // 공통 기능
+
+//핵심기능
+<br>SQL1<br>
+SQL2<br>
+SQL3<br>
+...
+
+conn.commit() // 공통기능
 
 8. 로거 연동 
 - slf4j-api
@@ -181,9 +196,9 @@ Mapper : 변환 작업, 검색
 - DEBUG
 - TRACE
 
-%d -> 날짜, 시간
-%5p -> 5자 내에서 로그 레벨을 출력
-%c{2} -> 패키지를 요약(한글자로 요략) + 클래스명
+%d -> 날짜, 시간 <br>
+%5p -> 5자 내에서 로그 레벨을 출력<br>
+%c{2} -> 패키지를 요약(한글자로 요략) + 클래스명<br>
 %m -> 출력 메세지
 
 JDBC API
@@ -192,3 +207,22 @@ JDBC API
 - 변경(INSERT, UPDATE, DELETE)
   - int executeUpdate(..) : 반영된 레크드 갯수가 반환값
 
+내부 클래스 : 클래스 내부에 정의된 클래스
+1) 인스턴스 내부 클래스
+2) 정적 내부 클래스
+3) 지역 내부 클래스(중요!)
+ - 메서드 지역 안에 정의된 클래스
+ - 인터페이스, 추상 클래스가 객체가 되는 조건
+    1) 환경 조건
+       - 지역 내부
+       - 맴버 변수
+    2) 미 구현된 추상 메서드의 구현 내용을 추가함으로써
+4) 익명 내부 클래스
+
+함수(메서드) 내에 정의된 지역 변수 <br>
+-> 호출되서 실행할때 변수의 자원 할당<br>
+-> 연산 종료(return) : 자원 해제
+
+int num3<br>
+-> 지역 변수로써 스택에서 할당 -> 임시 메모리(제거)<br>
+-> 지역 내부에서 정의된 클래스의 메서드에서 사용 중? -> 제거 x -> 상수화(fical) -> 데이터 영역 메모리 생성(제거x)

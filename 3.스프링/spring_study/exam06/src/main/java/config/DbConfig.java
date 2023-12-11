@@ -4,6 +4,8 @@ import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
 public class DbConfig {
@@ -27,5 +29,11 @@ public class DbConfig {
     @Bean
     public JdbcTemplate jdbcTemplate() {
         return new JdbcTemplate(dataSource());
+    }
+
+    @Bean
+    public PlatformTransactionManager transactionManager() { // 프록시 형태로 setAutocommit이 자동으로 들어간다.
+        DataSourceTransactionManager tm = new DataSourceTransactionManager(dataSource());
+        return tm;
     }
 }

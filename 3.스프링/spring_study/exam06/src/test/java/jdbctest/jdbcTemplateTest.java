@@ -7,18 +7,25 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = AppCtx.class) // 의존성 주입으로 테스트 준비
+@Transactional
 public class jdbcTemplateTest {
     @Autowired
     private DataSource dataSource;
@@ -60,7 +67,50 @@ public class jdbcTemplateTest {
         }
     }
 
-    /**
+    @Test
+    @DisplayName("단일 조회 테스트")
+    void selectTest2() {
+        String userId = "USER99";
+        String sql = "SELECT FROM MEMBER WHERE USER_ID = ?";
+
+        try {
+            Member member = jdbcTemplate.queryForObject(sql, this::mapper, userId);
+            System.out.println(member);
+        } catch (DataAccessException e) {
+            System.out.println("조회된 데이터 없음");
+        }
+    }
+
+    @Test
+    @DisplayName("통계 데이터 조회")
+    void selectTest3() {
+        String sql = "SELECT COUNT(*) FROM MEMBER";
+        long total = jdbcTemplate.queryForObject(sql, long.class);
+        System.out.println(total);
+    }
+
+    @Test
+    @DisplayName("INSERT 후 시퀀스 번호 추출")
+    void insertTest2() {
+        KeyHolder keyHolder = new GeneratedKeyHolder(); // 증감번호를 가져온다.
+        int affectedRows = jdbcTemplate.update(con -> {
+                String sql = "INSERT INTO MEMBER (USER_NO, USER_ID, USER_PW, USER_NM, EMAIL) VALUES (SEQ_MEMBER.nextval, ?, ?, ?, ?)";
+                PreparedStatement pstmt = con.prepareStatement(sql, new String[] {"USER_NO"});
+
+                pstmt.setString(1, "USER199");
+                pstmt.setString(2, "123456");
+                pstmt.setString(3, "사용자199");
+                pstmt.setString(4, "user199@test.org");
+
+                return pstmt;
+
+        }, keyHolder);
+
+        long userNo = keyHolder.getKey().longValue(); // 키를 롱값으로 가져온다.
+        System.out.println("userNo : " + userNo);
+    }
+
+    /*
         List<Member> members = jdbcTemplate.query(sql, new RowMapper<Member>() { // new RowMapper<Member>() -> 생략 가능 , 람다사용
         @Override
         public Member mapRow(ResultSet rs, int rowNum) throws SQLException { // rowMapp 내부 호출
