@@ -1,9 +1,9 @@
 package exam03;
 
 public class Juicier {
-    /*public static void make(FruitBox<?> applBox) {
+    public static void make(FruitBox<?> appleBox) {
 
-    }*/
+    }
 
     /*public static void make(FruitBox<?> pearBox) {
 

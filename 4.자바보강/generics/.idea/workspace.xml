@@ -5,16 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="366e495e-c62c-4f51-a41e-ef282be0dbdf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exam04/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam04/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam04/Ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam04/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../img/객체.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/java/configs/ControllerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/java/configs/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/java/controllers/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/java/controllers/member/MemberController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/java/controllers/member/RequestJoin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/java/controllers/member/RequestLogin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/webapp/WEB-INF/templates/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/webapp/WEB-INF/templates/member/join.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/webapp/WEB-INF/templates/member/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../수업 정리/타임리프.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../3.스프링/spring_study/exam07/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exam02/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exam02/Ex01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/exam03/Juicier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exam03/Juicier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/Spring.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/객체지향.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/객체지향.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../수업 정리/springMVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/springMVC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../수업 정리/프로젝트 만들기.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/프로젝트 만들기.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +60,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/app/Java/spring2311/4.자바보강/annotation"
   }
 }]]></component>
