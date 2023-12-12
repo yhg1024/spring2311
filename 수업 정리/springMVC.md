@@ -83,7 +83,7 @@ Get /Hello -> DispatcherServlet -> HandlerMapping -> HelloController 빈
 -> HandlerAdapter -> HelloController::hello 호출 -> ModelAndView 객케 -> ViewResolver -> View 객체 검색 -> 응답
 -> HandlerAdapter -> HelloController::hello에 정의된 메서드 매개변수를 파악 -> 자동 주입 -> 호출
 
-자동 주입
+자동 주입 : 실행 될때 주입
 1) 요청 데이터
     @RequestParam("파마리터명") 변수 -> 요청 데이터(GET, POST ...) 중에서 주입
     변수의 자료형 대로 자동으로 형변환 처리
@@ -116,3 +116,5 @@ Ant 경로 패턴
 - HandlerMapping : 클라이언트의 요청을 처리할 핸들러 객체를 찾아준다. 핸들러(커맨드) 객체는 클라이언트의 요청을 실제로 처리한 뒤 뷰 정보와 모델을 설정한다.
 - HandlerAdapter : DispatcherServlet과 핸들러 객체 사이의 변환을 알맞게 처리해 준다.
 - ViewResolver : 요청 처리 결과를 생성할 View를 찾아주고 View는 최종적으로 클라이언트에 응답을 생성해서 전달한다.
+
+스프링 컨테이너 : 객체 관리하는 
