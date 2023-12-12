@@ -4,7 +4,28 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mapper.MemberMapper">
     <select id="getMembers" resultType="models.member.Member">
+        <bind name="userId" value="'%' + _parameter.getUserId() + '%'"/>
+        <bind name="userNm" value="'%' + _parameter.getUserNm() + '%'"/>
         SELECT * FROM MEMBER
+        <trim prefix="WHERE" suffixOverrides="AND | OR"> <!--suffixOverrides : 뒤에꺼 제거-->
+            <if test="userId != null">
+                USER_ID LIKE #{userId} AND
+            </if>
+            <if test="userNm != null">
+                USER_NM LIKE #{userNm} AND
+            </if>
+        </trim>
+        <!--
+            <where> --><!--조건 데이터가 있을때만 where절이 추가 된다.-->
+                <!--컨텐츠가 “AND”나 “OR”로 시작한다면 그 “AND”나 “OR”를 지워버린다.-->
+                <!--<if test="userId != null">
+                    USER_ID LIKE #{userId}
+                </if>
+                <if test="userNm != null">
+                    AND USER_NM LIKE #{userNm}
+                </if>
+            </where>
+        -->
     </select>
     <insert id="register">
         <selectKey keyProperty="userNo" order="BEFORE" resultType="long">
@@ -16,10 +37,17 @@
     </insert>
     <update id="update">
         UPDATE MEMBER
-            SET
+            <set> <!--,를 제거한다.-->
+                <if test="userPw != null">
                 USER_PW = #{userPw},
+                </if>
+                <if test="userNm != null">
                 USER_NM = #{userNm},
+                </if>
+                <if test="email != null">
                 EMAIL = #{email}
+                </if>
+            </set>
         WHERE USER_ID = #{userId}
     </update>
     <delete id="delete">

@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f1792cd-b015-4e74-96ea-1ef73c49bad2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mapper/MemberMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/mybatisTest/MemberMapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/MyBatis.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/DbConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/MemberMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/jdbctest/jdbcTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jdbctest/jdbcTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mybatisTest/MemberMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mybatisTest/MemberMapperTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,46 +58,40 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/app/Java/spring2311/3.스프링/spring_study/exam06",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MemberMapperTest.memberListTest">
-    <configuration name="Ex04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exam01.Ex04" />
-      <module name="exam06.main" />
+  <component name="RunManager" selected="JUnit.MemberMapperTest.memberDeleteTest">
+    <configuration name="MemberMapperTest.memberDeleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exam06.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exam01.*" />
+          <option name="PATTERN" value="mybatisTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="mybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="mybatisTest.MemberMapperTest" />
+      <option name="METHOD_NAME" value="memberDeleteTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="exam02.Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exam02.Ex01" />
-      <module name="exam06.main" />
+    <configuration name="MemberMapperTest.memberInsertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exam06.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exam02.*" />
+          <option name="PATTERN" value="mybatisTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="exam02.Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exam02.Ex02" />
-      <module name="exam06.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exam02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="mybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="mybatisTest.MemberMapperTest" />
+      <option name="METHOD_NAME" value="memberInsertTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,17 +112,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="jdbcTemplateTest.connectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MemberMapperTest.memberUpdateTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="exam06.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jdbctest.*" />
+          <option name="PATTERN" value="mybatisTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="jdbctest" />
-      <option name="MAIN_CLASS_NAME" value="jdbctest.jdbcTemplateTest" />
-      <option name="METHOD_NAME" value="connectionTest" />
+      <option name="PACKAGE_NAME" value="mybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="mybatisTest.MemberMapperTest" />
+      <option name="METHOD_NAME" value="memberUpdateTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemberMapperTest.memerInsertTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="exam06.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mybatisTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mybatisTest" />
+      <option name="MAIN_CLASS_NAME" value="mybatisTest.MemberMapperTest" />
+      <option name="METHOD_NAME" value="memerInsertTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MemberMapperTest.memberDeleteTest" />
+        <item itemvalue="JUnit.MemberMapperTest.memberUpdateTest" />
+        <item itemvalue="JUnit.MemberMapperTest.memberInsertTest" />
         <item itemvalue="JUnit.MemberMapperTest.memberListTest" />
-        <item itemvalue="Application.exam02.Ex02" />
-        <item itemvalue="Application.exam02.Ex01" />
-        <item itemvalue="JUnit.jdbcTemplateTest.connectionTest" />
-        <item itemvalue="Application.Ex04" />
+        <item itemvalue="JUnit.MemberMapperTest.memerInsertTest" />
       </list>
     </recent_temporary>
   </component>
@@ -155,5 +164,20 @@
       <updated>1702012621598</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/mybatisTest/MemberMapperTest.java</url>
+          <line>22</line>
+          <properties class="mybatisTest.MemberMapperTest" method="memberListTest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

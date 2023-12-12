@@ -9,8 +9,6 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.PreparedStatementCreator;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.test.context.ContextConfiguration;
@@ -25,7 +23,7 @@ import java.util.List;
 
 @ExtendWith(SpringExtension.class)
 @ContextConfiguration(classes = AppCtx.class) // 의존성 주입으로 테스트 준비
-@Transactional
+//@Transactional // test데이터는 실행하나 rollback 시켜 실제 데이터는 변하지 않는다.
 public class jdbcTemplateTest {
     @Autowired
     private DataSource dataSource;
@@ -51,7 +49,29 @@ public class jdbcTemplateTest {
         String sql = "INSERT INTO MEMBER (USER_NO, USER_ID, USER_PW, USER_NM, EMAIL) " +
                 " VALUES (SEQ_MEMBER.nextval, ?, ?, ?, ?)";
         int affectedRows = jdbcTemplate.update(sql, "USER99", "123456", "사용자99", "user99@test.org");
+
         System.out.println(affectedRows);
+    }
+
+    @Test
+    @DisplayName("INSERT 후 시퀀스 번호 추출")
+    void insertTest2() {
+        KeyHolder keyHolder = new GeneratedKeyHolder(); // 증감번호를 가져온다.
+        int affectedRows = jdbcTemplate.update(con -> {
+            String sql = "INSERT INTO MEMBER (USER_NO, USER_ID, USER_PW, USER_NM, EMAIL) VALUES (SEQ_MEMBER.nextval, ?, ?, ?, ?)";
+            PreparedStatement pstmt = con.prepareStatement(sql, new String[] {"USER_NO"});
+
+            pstmt.setString(1, "USER199");
+            pstmt.setString(2, "123456");
+            pstmt.setString(3, "사용자199");
+            pstmt.setString(4, "user199@test.org");
+
+            return pstmt;
+
+        }, keyHolder);
+
+        long userNo = keyHolder.getKey().longValue(); // 키를 롱값으로 가져온다.
+        System.out.println("userNo : " + userNo);
     }
 
     @Test
@@ -71,12 +91,13 @@ public class jdbcTemplateTest {
     @DisplayName("단일 조회 테스트")
     void selectTest2() {
         String userId = "USER99";
-        String sql = "SELECT FROM MEMBER WHERE USER_ID = ?";
+        String sql = "SELECT * FROM MEMBER WHERE USER_ID = ?";
 
         try {
             Member member = jdbcTemplate.queryForObject(sql, this::mapper, userId);
             System.out.println(member);
         } catch (DataAccessException e) {
+            e.printStackTrace();
             System.out.println("조회된 데이터 없음");
         }
     }
@@ -89,26 +110,7 @@ public class jdbcTemplateTest {
         System.out.println(total);
     }
 
-    @Test
-    @DisplayName("INSERT 후 시퀀스 번호 추출")
-    void insertTest2() {
-        KeyHolder keyHolder = new GeneratedKeyHolder(); // 증감번호를 가져온다.
-        int affectedRows = jdbcTemplate.update(con -> {
-                String sql = "INSERT INTO MEMBER (USER_NO, USER_ID, USER_PW, USER_NM, EMAIL) VALUES (SEQ_MEMBER.nextval, ?, ?, ?, ?)";
-                PreparedStatement pstmt = con.prepareStatement(sql, new String[] {"USER_NO"});
 
-                pstmt.setString(1, "USER199");
-                pstmt.setString(2, "123456");
-                pstmt.setString(3, "사용자199");
-                pstmt.setString(4, "user199@test.org");
-
-                return pstmt;
-
-        }, keyHolder);
-
-        long userNo = keyHolder.getKey().longValue(); // 키를 롱값으로 가져온다.
-        System.out.println("userNo : " + userNo);
-    }
 
     /*
         List<Member> members = jdbcTemplate.query(sql, new RowMapper<Member>() { // new RowMapper<Member>() -> 생략 가능 , 람다사용
@@ -130,7 +132,7 @@ public class jdbcTemplateTest {
         return  Member.builder()
                 .userNo(rs.getLong("USER_NO"))
                 .userId(rs.getString("USER_ID"))
-                .userPw(rs.getString("123456"))
+                .userPw(rs.getString("USER_PW"))
                 .userNm(rs.getString("USER_NM"))
                 .email(rs.getString("EMAIL"))
                 .regDt(rs.getTimestamp("REG_DT").toLocalDateTime())
