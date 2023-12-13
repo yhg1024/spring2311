@@ -7,6 +7,10 @@ public class Ex01 {
         // HashMap<String, String> members = new HashMap<>();
         // 키 자료형의 Comparable 인터페이스
         // 대안 정렬 기준 java.util.Comparator 인터페이스
+
+        // Comparator<String> com = (a,b) -> a.compareTo(b);
+        Comparator<String> com = String::compareTo;
+
         TreeMap<String, String> members = new TreeMap<>(Comparator.reverseOrder());
         members.put("user02", "김이름");
         members.put("user01", "이이름");
