@@ -302,7 +302,7 @@ joinService : validate  - member(데이터형태 객체) - memberDao(데이터�
 6. 빈 객체의 생성과 관리 범위
    @Scope 
     - singleton : 단일 객체
-    - prototype : 조회마다 새로운 객체 생성/ 스프링 컨테이너 관리 기능에 제한점이 
+   - prototype : 조회마다 새로운 객체 생성/ 스프링 컨테이너 관리 기능에 제한점이 
 
 
 

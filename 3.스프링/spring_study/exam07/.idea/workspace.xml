@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6276c6-26db-44f9-8252-18de6ff05658" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/member/join.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/member/join.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../수업 정리/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/Spring.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/컬렉션 프레임워크.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/컬렉션 프레임워크.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
