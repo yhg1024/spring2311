@@ -1,10 +1,13 @@
 package configs;
 
+import commons.Utils;
 import nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.*;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
 import org.thymeleaf.spring6.SpringTemplateEngine;
@@ -28,6 +31,12 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**") // /** 기본경로에서 하위경로를 포함한 모든 경로
                 .addResourceLocations("classpath:/static/");
+    }
+
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/")
+                .setViewName("main/index");
     }
 
     @Bean
@@ -64,5 +73,19 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.viewResolver(thymeleafViewResolver());
+    }
+
+    @Bean
+    public MessageSource messageSource() {
+        ResourceBundleMessageSource ms = new ResourceBundleMessageSource();
+        ms.setDefaultEncoding("UTF-8");
+        ms.setBasenames("messages.commons");
+
+        return ms;
+    }
+
+    @Bean
+    public Utils utils() {
+        return new Utils();
     }
 }
