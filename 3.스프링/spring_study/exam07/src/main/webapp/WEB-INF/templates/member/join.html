@@ -3,6 +3,79 @@
     xmlns:layout="http://ultraq.net.nz/thymeleaf/layout"
     layout:decorate="~{layouts/common}">
 <main layout:fragment="content">
-    <h1>회원가입</h1>
+    <h1 th:text="#{회원가입}"></h1>
+    [[${hobbies}]]
+    <form method="post" th:action="@{/member/join}" th:object="${requestJoin}">
+        <dl>
+            <dt th:text="#{아이디}"></dt>
+            <dd>
+                <input type="text" name="userId" th:field="*{userId}">
+                <!--userId가 널값인데 requestJoin을 호출하니 오류가 나서 MemberController에 @ModelAttribute를 추가하면 오류가 나지 않는다.-->
+            </dd>
+        </dl>
+        <dl>
+            <dt th:text="#{비밀번호}"></dt>
+            <dd>
+                <input type="password" name="userPw" th:field="*{userPw}">
+            </dd>
+        </dl>
+        <dl>
+            <dt th:text="#{비밀번호_확인}"></dt> <!--코드 입력할때는 공백을 넣으면 안되고 언더바를 넣자-->
+            <dd>
+                <input type="password" name="confirmPw" th:field="*{confirmPw}">
+            </dd>
+        </dl>
+        <dl>
+            <dt th:text="#{회원명}"></dt>
+            <dd>
+                <input type="text" name="userNm" th:field="*{userNm}">
+            </dd>
+        </dl>
+        <dl>
+            <dt th:text="#{이메일}"></dt>
+            <dd>
+                <input type="email" name="email" th:field="*{email}">
+            </dd>
+        </dl>
+
+        <dl>
+            <dt th:text="#{취미}"></dt>
+            <dd>
+                <!--<input type="checkbox" name="hobby" value="자바" id="hobby1" th:field="*{hobby}">
+                <label for="hobby1">자바</label>
+
+                <input type="checkbox" name="hobby" value="오라클" id="hobby2" th:field="*{hobby}">
+                <label for="hobby2">오라클</label>
+
+                <input type="checkbox" name="hobby" value="JSP" id="hobby3" th:field="*{hobby}">
+                <label for="hobby3">JSP</label>
+
+                <input type="checkbox" name="hobby" value="스프링" id="hobby4" th:field="*{hobby}">
+                <label for="hobby4">스프링</label>-->
+                <th:block th:each="h, status : ${hobbies}">
+                    <input type="checkbox" name="hobby" th:value="${h}"
+                           th:id="${'hobby' + status.count}" th:field="*{hobby}">
+                    <label th:for="${'hobby' + status.count}" th:text="${h}"></label>
+                    <!--input의 id값과 label의 for의 값이 같으면 체크박스만이 아니고 글자를 눌러도 된다. -->
+                </th:block>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt th:text="#{주소}"></dt>
+            <dd>
+                <input type="text" name="addr.zipcode" th:field="*{addr.zipcode}">
+                <input type="text" name="addr.address" th:field="*{addr.address}">
+                <input type="text" name="addr.addressSub" th:field="*{addr.addressSub}">
+            </dd>
+        </dl>
+
+        <div>
+            <input type="checkbox" name="agree" value="true" id="agree">
+            <label for="agree" th:text="#{회원가입_약관에_동의합니다.}"></label>
+        </div>
+
+        <button type="submit" th:text="#{가입하기}"></button>
+    </form>
 </main>
 </html>
