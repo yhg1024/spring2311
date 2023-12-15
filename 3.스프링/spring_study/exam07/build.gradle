@@ -37,6 +37,9 @@ dependencies {
     implementation 'org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE' /*thymeleaf java8time*/
     implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.3.0' /*thymeleaf layout*/
 
+    implementation 'jakarta.validation:jakarta.validation-api:3.0.2' /*validation api*/
+    implementation 'org.hibernate.validator:hibernate-validator:8.0.1.Final' /*hibernate validator*/
+
     compileOnly 'org.projectlombok:lombok:1.18.30' /*lombok*/
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
 

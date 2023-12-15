@@ -77,15 +77,25 @@ RequestDispatcher
 
 2. 커맨드 객체 검증
 1) Validator 인터페이스
-- 
 2) Errors
-3) ValidationUtils
+- reject("에러코드") - 메세지 코드로 에러코드가 등록된 경우 -> 출력
+- reject("에러코드", "기본 메세지") - 에러코드가 메세지로 등록 되지 않은 경우 기본 메세지
 
+-- 특정 필드에 해당하는 에러 메세지 처리 --
+- rejectValue("필드명", "에러코드");
+- rejectValue("필드명", "에러코드", "기본메세지");
+
+- boolean hasErrors() : reject 또는 rejectValue가 한개라도 호출 되면 -> true
+- 에러 출력 -> #fields.errors("필드명")
+
+3) ValidationUtils
+   - .rejectIfEmpty
+   - .rejectIfEmptyOrWhitespaces(...)
 
 3. 에러 코드에 해당하는 메시지 코드를 찾는 규칙
 - 에러코드 + "." + 커맨드객체이름 + "." + 필드명
 - 에러코드 + "." + 필드명
-- 에러코드 + "." + 필드타입
+- 에러코드 + "." + 필드타입(자료형 - 예) java.lang.Integer, java.lang.String
 - 에러코드
 
 4. 프로퍼티 타입이 List나 목록인 경우 다음 순서를 사용해서 메시지 코드를 생성한다.
@@ -110,26 +120,31 @@ RequestDispatcher
 3) 컨트롤러 범위 Validator  > 글로벌 범위 Validator
 
 6. Bean Validation
+- Bean Validation API
+- Hibernate Valiator 
 1) 설정
 2) Bean Validation의 주요 애노테이션
-   @AssertTrue
-   @AssertFalse
-   @DecimalMax
-   @DecimalMin
-   @Max
-   @Min
-   @Digits
-   @Size
-   @Null
-   @NonNull
-   @Pattern
+   - @AssertTrue, @AssertFalse : 값이 true인지 또는 false인지 검사한다. null은 유효하다고 판단한다.
+   - @DecimalMax, @DecimalMin : 지정한 값보다 작거나 같은지 또는 크기가 같은지 검사한다. inclusive가 false이면 value로 지정한 값은 포함하지 않는다. null은 유효하다고 판단한다.
+   - @Max, @Min : 지정한 값보다 작거나 같은지 또는 크거나 같은지 검사한다. null은 유효하다고 판단한다.
+   - @Digits : 자릿수가 지정한 크기를 넘지않는지 검사한다.
+     null은 유효하다고 판단한다.
+   - @Size : 길이나 크기가 지정한 값 범위에 있는지 검사한다. null은 유효하다고 판단한다.
+   - @Null, @NonNull : 값이 null인지 또는 null이 아닌지 검사한다.
+   - @Pattern :값이 정규표현식에 일치하는지 검사한다.
+     null은 유효하다고 판단한다.
 
-@NotEmpty
-@NotBlank
-@Positive
-@PositiveOrZero
-@Email
-@Future
-@FutureOrPresent
-@Past
-@PastOrPresent
+Bean Validator 2.0이 추가로 제공하는 애노테이션
+- @NotEmpty :문자열이나 배열의 경우 null이 아니고 길이가 0이 아닌지 검사한다. 콜렉션의 경우 null이 아니고 크기가 0이 아닌지 검사한다. (NotBlack를 더 많이 쓴다.)
+- @NotBlank : null이 아니고 최소한 한 개 이상의 공백아닌 문자를 포함하는지 검사한다.
+- @Positive, @PositiveOrZero : 양수인지 검사한다.   <br>
+- OrZero가 붙은 것은 0 또는 양수인지 검사한다. <br> 
+- null은 유효하다고 판단한다.
+- @Email 	이메일 주소가 유효한지 검사한다.<br>
+  null은 유효하다고 판단한다.
+- @Future, @FutureOrPresent : 해당 시간이 미래 시간인지 검사한다. <br>
+  OrPresent가 붙은 것은 현재 또는 미래 시간인지 검사한다. <br>
+  null은 유효하다고 판단한다.
+- @Past, @PastOrPresent : 해당 시간이 과거 시간인지 검사한다. <br>
+  OrPresent가 붙은 것은 현재 또는 과거 시간인지 검사한다. <br>
+  null은 유효하다고 판단한다.

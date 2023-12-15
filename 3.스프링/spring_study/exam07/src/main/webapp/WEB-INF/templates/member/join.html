@@ -10,6 +10,7 @@
             <dt th:text="#{아이디}"></dt>
             <dd>
                 <input type="text" name="userId" th:field="*{userId}">
+                <div th:each="err : ${#fields.errors('userId')}" th:text="${err}"></div>
                 <!--userId가 널값인데 requestJoin을 호출하니 오류가 나서 MemberController에 @ModelAttribute를 추가하면 오류가 나지 않는다.-->
             </dd>
         </dl>
@@ -17,31 +18,35 @@
             <dt th:text="#{비밀번호}"></dt>
             <dd>
                 <input type="password" name="userPw" th:field="*{userPw}">
+                <div th:each="err : ${#fields.errors('userPw')}" th:text="${err}"></div>
             </dd>
         </dl>
         <dl>
             <dt th:text="#{비밀번호_확인}"></dt> <!--코드 입력할때는 공백을 넣으면 안되고 언더바를 넣자-->
             <dd>
                 <input type="password" name="confirmPw" th:field="*{confirmPw}">
+                <div th:each="err : ${#fields.errors('confirmPw')}" th:text="${err}"></div>
             </dd>
         </dl>
         <dl>
             <dt th:text="#{회원명}"></dt>
             <dd>
                 <input type="text" name="userNm" th:field="*{userNm}">
+                <div th:each="err : ${#fields.errors('userNm')}" th:text="${err}"></div>
             </dd>
         </dl>
         <dl>
             <dt th:text="#{이메일}"></dt>
             <dd>
-                <input type="email" name="email" th:field="*{email}">
+                <input type="text" name="email" th:field="*{email}">
+                <div th:each="err : ${#fields.errors('email')}" th:text="${err}"></div>
             </dd>
         </dl>
 
-        <dl>
+        <!--<dl>
             <dt th:text="#{취미}"></dt>
             <dd>
-                <!--<input type="checkbox" name="hobby" value="자바" id="hobby1" th:field="*{hobby}">
+                &lt;!&ndash;<input type="checkbox" name="hobby" value="자바" id="hobby1" th:field="*{hobby}">
                 <label for="hobby1">자바</label>
 
                 <input type="checkbox" name="hobby" value="오라클" id="hobby2" th:field="*{hobby}">
@@ -51,12 +56,12 @@
                 <label for="hobby3">JSP</label>
 
                 <input type="checkbox" name="hobby" value="스프링" id="hobby4" th:field="*{hobby}">
-                <label for="hobby4">스프링</label>-->
+                <label for="hobby4">스프링</label>&ndash;&gt;
                 <th:block th:each="h, status : ${hobbies}">
                     <input type="checkbox" name="hobby" th:value="${h}"
                            th:id="${'hobby' + status.count}" th:field="*{hobby}">
                     <label th:for="${'hobby' + status.count}" th:text="${h}"></label>
-                    <!--input의 id값과 label의 for의 값이 같으면 체크박스만이 아니고 글자를 눌러도 된다. -->
+                    &lt;!&ndash;input의 id값과 label의 for의 값이 같으면 체크박스만이 아니고 글자를 눌러도 된다. &ndash;&gt;
                 </th:block>
             </dd>
         </dl>
@@ -68,11 +73,12 @@
                 <input type="text" name="addr.address" th:field="*{addr.address}">
                 <input type="text" name="addr.addressSub" th:field="*{addr.addressSub}">
             </dd>
-        </dl>
+        </dl>-->
 
         <div>
             <input type="checkbox" name="agree" value="true" id="agree">
             <label for="agree" th:text="#{회원가입_약관에_동의합니다.}"></label>
+            <div th:each="err : ${#fields.errors('agree')}" th:text="${err}"></div>
         </div>
 
         <button type="submit" th:text="#{가입하기}"></button>

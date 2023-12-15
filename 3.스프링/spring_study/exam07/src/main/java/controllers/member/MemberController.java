@@ -1,8 +1,11 @@
 package controllers.member;
 
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 import models.member.Member;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -12,7 +15,10 @@ import java.util.List;
 
 @Controller
 @RequestMapping("/member")
+@RequiredArgsConstructor// final 주입
 public class MemberController {
+
+    private final JoinValidator joinValidator;
 
     @ModelAttribute("hobbies")
     public List<String> hobbies() {
@@ -39,9 +45,17 @@ public class MemberController {
     }
 
     @PostMapping("/join") // /member/join
-    public String joinPs(RequestJoin form, Model model) {
+    public String joinPs(@Valid  RequestJoin form, Errors errors, Model model) {
+        // 에러객체가 커맨드 객체 뒤로 와야한다.
+
+        joinValidator.validate(form, errors); // 검증을 처리하고 검증에 대한 에러 메세지
+
+        if (errors.hasErrors()) { // 검증 실패시
+            return "member/join";
+        }
+
         // System.out.println(form);
-        // 커맨객체 RequestJoin -> requestJoin 이름으로 속성이 추가 -> 템플릿 내에서 바로 접근 가능
+        // 커맨드객체 RequestJoin -> requestJoin 이름으로 속성이 추가 -> 템플릿 내에서 바로 접근 가능
 
         /*model.addAttribute("requestJoin", form);
         // requestJoin으로 member/join에 속성 추가 직접 접근가능*/
