@@ -1,3 +1,5 @@
+package main;
+
 public class Student {
     // 맴버변수
     int studentId;

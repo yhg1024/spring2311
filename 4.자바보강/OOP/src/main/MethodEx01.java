@@ -1,3 +1,5 @@
+package main;
+
 public class MethodEx01 {
     public static void main(String[] args) {
         int x = 3;
