@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4834c7bf-e101-4468-a636-aeab208b7eed" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Objectex.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam01/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exam01/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../streamex/src/exam01/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../streamex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../streamex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../streamex/src/exam01/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../streamex/src/exam01/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../수업 정리/객체지향.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/객체지향.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../수업 정리/스트림.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/스트림.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2Zhy0MELBomxyZhqBSo2kpW08dv" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4834c7bf-e101-4468-a636-aeab208b7eed" name="Changes" comment="" />
+      <created>1702888382428</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702888382428</updated>
+    </task>
+    <servers />
+  </component>
+</project>
