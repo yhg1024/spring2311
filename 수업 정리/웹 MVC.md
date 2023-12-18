@@ -148,3 +148,104 @@ Bean Validator 2.0이 추가로 제공하는 애노테이션
 - @Past, @PastOrPresent : 해당 시간이 과거 시간인지 검사한다. <br>
   OrPresent가 붙은 것은 현재 또는 과거 시간인지 검사한다. <br>
   null은 유효하다고 판단한다.
+
+
+암호화
+- 양방향 암호화
+    - 암호화 - 복호화
+        - AES256
+        - ARIA
+
+- 단방향 암호화
+    - 복호화는 불가
+        - 해시
+        - 고정 해시 : sha1, md5, sha256, sha512
+            - : 같은 값에 대해서 동일한 해시 값이 나온다.
+            - 예측이 가능해서 보안에 취약하다, 검증의 용도로만 쓴다.
+        - 유동 해시 : 같은 값에 대해서 해시를 만들때 마다 다른 해시값
+            - 예측 불가능성
+            - BCrypt
+
+커멘드 객체
+1. 요청 데이터 매핑(set멤버변수명() .. 멤버변수명 == name)
+- RequestJoin -> requestJoin : Model의 속성명으로 추가 -> 템플릿 내에서 바로 접근 가능
+2. 커맨드 객체 검증 (Bean Validation API) - 에너테이션으로
+
+
+# 스프링 MVC
+1. 세션
+   - 개인 서비스 데이터를 직접 서버에 저장
+   - 개인 데이터를 찾으려면?
+     - 브라우저마다 JSESSIONID 저장 : 개개인의 브라우저를 구분할 수 있는 값
+     - 요청시 마다 요청 헤더 Cookie: JSESSIONID=... 를 통해서 서버에 전송
+     - 요청 처리 중에 JSESSIONID -> 서버쪽에 저장된 개인 데이터를 추출 -> session 객체 생성
+     - HttpServletRequest
+       - HttpSession getSession() // 세션 객체 조회
+   - HttpSession session 
+     - setAttribute(String name, Object value)
+     - Object getAttribute(String name)
+     - void removeAttribute(String name) // 특정 키값만 지운다.
+     - invalidate() : 세션 비우기
+2. 인터셉터
+   1) HandlerInterceptor 인터페이스
+   - boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception;
+     : 컨트롤러 빈 실행 전 호출
+     : 컨트롤러 빈 실행 전 공통 적인 처리
+     : true -> 컨트롤러 빈을 호출 실행
+     : false -> X
+     : + 인가(페이지 접근 제한)
+
+   - void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception;
+     : 컨트롤러 빈 실 행 후, 응답 전 호출
+     : 컨틀로러 빈 실 행 후 공통적인 처리
+
+   - void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception;
+     : 응답 완료 후 호출
+     : 응답 완료 후 공통적인 정리 작업..
+
+/mypage
+
+2) WebMvcConfigurer 인터페이스 : addInterceptors(InterceptorRegistry registry)
+   -> 적용할 URL 패턴 + 인터셉터 객체
+
+   3) Ant 경로 패턴
+- * : 0개 또는 그 이상의 글자
+  - ** 0개 또는 그 이상의 폴더 경로
+  - ? : 1개 글자
+
+/mypage/**
+
+/mypage
+/mypage/sub
+/mypage/sub/sub2
+
+3. 쿠키
+- 개인 서비스 구현 기술 (개개인을 구분해서 서비스를 제공)
+- 개개인을 어떻게 구분?
+  - 브라우저별로 데이터를 저장함으로써 개개인의 데이터를 유지
+     - NNB - 브라우저마다 다른 값
+- 쿠키 데이터(개개인 구분 데이터)는 서버가 필요한 데이터
+  - 매 요청시마다 요청 헤더(cookie)에 실어서 함께 전송
+
+same-site : 같은 사이트끼리만 쿠키공유
+
+서블릿
+- 쿠키 등록
+  - 응답 헤더 : Set-Cookie : 키=값, 키=값;
+  - HttpServletResponse::addCookie(Cookie cookie)
+- 쿠키 조회
+  - 요청 헤더 : Cookie 항목으로 전송
+  - HttpServletRequest
+    - Cookie[] getCookies()
+
+문제?
+1. 요청시 마다 헤더에 실려서 서번에 전송 : 노출 - 보안에 취약
+   - 개인정보는 절개 사용 불가
+   - 쿠키는 암호화가 필수
+2. 요청시 마다 헤더에 실려서 서버에 전송 : 전송 데이터가 많아진다. 네트워크에 부담
+
+세션 : 이러한 문제점을 해결하기 위한 기술
+
+@CookieValue 쿠키명과 동일한 변수명
+- 쿠키 개별 조회
+- 특정 변수에 주입, 형변환도 자동

@@ -61,3 +61,5 @@ xml파일에서 동일한 명칭의 ID값을 찾아 매칭
 
 wrapper.xml : 복잡한 쿼리에 사용<br>
 interface : 간단한 쿼리에 사용
+
+

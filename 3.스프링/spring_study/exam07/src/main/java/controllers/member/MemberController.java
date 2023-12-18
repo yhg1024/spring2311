@@ -2,10 +2,12 @@ package controllers.member;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import models.member.JoinService;
 import models.member.Member;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
@@ -19,6 +21,7 @@ import java.util.List;
 public class MemberController {
 
     private final JoinValidator joinValidator;
+    private final JoinService joinService; // 의존성 추가
 
     @ModelAttribute("hobbies")
     public List<String> hobbies() {
@@ -46,6 +49,7 @@ public class MemberController {
 
     @PostMapping("/join") // /member/join
     public String joinPs(@Valid  RequestJoin form, Errors errors, Model model) {
+        // @Valid 빈 검증기(Bean Validator)를 이용해 객체의 제약 조건을 검증하도록 지시하는 어노테이션
         // 에러객체가 커맨드 객체 뒤로 와야한다.
 
         joinValidator.validate(form, errors); // 검증을 처리하고 검증에 대한 에러 메세지
@@ -53,6 +57,9 @@ public class MemberController {
         if (errors.hasErrors()) { // 검증 실패시
             return "member/join";
         }
+
+        // 회원 가입 처리
+        joinService.join(form);
 
         // System.out.println(form);
         // 커맨드객체 RequestJoin -> requestJoin 이름으로 속성이 추가 -> 템플릿 내에서 바로 접근 가능
@@ -63,7 +70,7 @@ public class MemberController {
         // response.sendRedirect(request.getContextPath() + "/member/login") // return "redirect:/member/login"; 과 동일한 형태
         // Location : 주소, 리턴의 값이 들어간다.
         // return "redirect:/member/login";
-        return "forward:/member/login";
+        return "redirect:/member/login";
         // return "member/join";
     }
 
@@ -98,4 +105,10 @@ public class MemberController {
 
         return "member/list";
     }
+
+    // controller에 해당하는 공통적 validator
+    /*@InitBinder
+    protected void initBinder(WebDataBinder binder) {
+        binder.setValidator(joinValidator);
+    }*/
 }

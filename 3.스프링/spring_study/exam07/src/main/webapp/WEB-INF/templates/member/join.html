@@ -4,12 +4,15 @@
     layout:decorate="~{layouts/common}">
 <main layout:fragment="content">
     <h1 th:text="#{회원가입}"></h1>
-    [[${hobbies}]]
+    <!--[[${hobbies}]]-->
     <form method="post" th:action="@{/member/join}" th:object="${requestJoin}">
+        <div th:each="err : ${#fields.globalErrors()}" th:text="${err}"></div>
+        <!--커멘드 객체의 문제일때-->
         <dl>
             <dt th:text="#{아이디}"></dt>
             <dd>
                 <input type="text" name="userId" th:field="*{userId}">
+                <!-- requestJoin.getUserId() -->
                 <div th:each="err : ${#fields.errors('userId')}" th:text="${err}"></div>
                 <!--userId가 널값인데 requestJoin을 호출하니 오류가 나서 MemberController에 @ModelAttribute를 추가하면 오류가 나지 않는다.-->
             </dd>
@@ -76,7 +79,7 @@
         </dl>-->
 
         <div>
-            <input type="checkbox" name="agree" value="true" id="agree">
+            <input type="checkbox" name="agree" value="true" id="agree" th:field="*{agree}">
             <label for="agree" th:text="#{회원가입_약관에_동의합니다.}"></label>
             <div th:each="err : ${#fields.errors('agree')}" th:text="${err}"></div>
         </div>
