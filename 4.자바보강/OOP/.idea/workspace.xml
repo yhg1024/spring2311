@@ -5,26 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87a41035-1b57-40bf-aa9b-7029782be191" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Objectex/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Objectex/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Objectex/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Objectex/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Objectex/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Objectex/Objectex.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Objectex/src/exam01/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Objectex/src/exam01/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../streamex/src/exam01/Ex05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../streamex/src/exam02/Ex06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/CompanyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/StudentTest4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/StudentTest5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/StudentTest6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/StudentTest7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../streamex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../streamex/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../streamex/src/exam01/Ex02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../streamex/src/exam01/Ex02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../수업 정리/객체지향.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/객체지향.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/스트림.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/스트림.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,25 +50,79 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.StudentTest2">
-    <configuration name="MethodEx01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MethodEx01" />
+  <component name="RunManager" selected="Application.CompanyTest">
+    <configuration name="CompanyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.CompanyTest" />
       <module name="OOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StudentTest2" />
+    <configuration name="StudentTest4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.StudentTest4" />
       <module name="OOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.StudentTest5" />
+      <module name="OOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.StudentTest6" />
+      <module name="OOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentTest7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.StudentTest7" />
+      <module name="OOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.StudentTest2" />
-        <item itemvalue="Application.MethodEx01" />
+        <item itemvalue="Application.CompanyTest" />
+        <item itemvalue="Application.StudentTest7" />
+        <item itemvalue="Application.StudentTest6" />
+        <item itemvalue="Application.StudentTest5" />
+        <item itemvalue="Application.StudentTest4" />
       </list>
     </recent_temporary>
   </component>
