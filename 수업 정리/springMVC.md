@@ -19,6 +19,10 @@
 - logbak-classic
 - lombok
 
+- init(ServletConfig config) : 가장 먼저 호출
+    - 설정을 주로 처리, 최초의 한번만 호출
+    - WebApplicationContext : 스프링 컨테이너 객체 생성
+        - 설정 클래스는? 설정 값 - contextConfigLocation 항목에 정의된 클래스
 1) 컨트롤러 구현
 2) JSP 구현
 
@@ -28,10 +32,7 @@
    @Controller, Controller 인터페이스의 구현체, HttpRequestHandler 인터페이스 구현체
 
 DispatcherServlet : 모든 요청의 창구
-- init(ServletConfig config) : 가장 먼저 호출
-   - 설정을 주로 처리, 최초의 한번만 호출
-   - WebApplicationContext : 스프링 컨테이너 객체 생성
-      - 설정 클래스는? 설정 값 - contextConfigLocation 항목에 정의된 클래스
+
 - 매 요청시 마다 doGet, doPost
 - destroy()
 
@@ -134,4 +135,4 @@ Ant 경로 패턴
         - HttpSession
 
 2) @ControllerAdvice
-    - 컨트롤러 실해 전 공통 기능
+    - 컨트롤러 실행 전 공통 기능
