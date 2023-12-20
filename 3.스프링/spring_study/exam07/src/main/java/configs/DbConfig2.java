@@ -3,21 +3,25 @@ package configs;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 public class DbConfig2 {
 
     @Profile("dev")
     @Configuration
-    static class DbDevConfig { // 개발 환경
+    @MapperScan("mapper")
+    @EnableTransactionManagement
+    static class DbDevConfig {
         @Bean(destroyMethod = "close")
         public DataSource dataSource() {
-            System.out.println("dev profile!!");
+            System.out.println("dev profile!!!");
             DataSource ds = new DataSource();
             /* 연결 설정 */
             ds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
@@ -30,16 +34,17 @@ public class DbConfig2 {
             ds.setMaxActive(10);
             ds.setTestWhileIdle(true);
 
+
             return ds;
         }
 
         @Bean
-        public PlatformTransactionManager transactionManager () {
+        public PlatformTransactionManager transactionManager() {
             return new DataSourceTransactionManager(dataSource());
         }
 
         @Bean
-        public SqlSessionFactory sqlSessionFactory () throws Exception{
+        public SqlSessionFactory sqlSessionFactory() throws Exception {
             SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
             sessionFactoryBean.setDataSource(dataSource());
 
@@ -49,10 +54,12 @@ public class DbConfig2 {
 
     @Profile("prod")
     @Configuration
-    static class DbProdConfig { // 서버쪽 배포했을때
+    @MapperScan("mapper")
+    @EnableTransactionManagement
+    static class DbProdConfig {
         @Bean(destroyMethod = "close")
         public DataSource dataSource() {
-            System.out.println("prod profile!!");
+            System.out.println("prod profile!!!");
             DataSource ds = new DataSource();
             /* 연결 설정 */
             ds.setDriverClassName("oracle.jdbc.driver.OracleDriver");
@@ -65,16 +72,17 @@ public class DbConfig2 {
             ds.setMaxActive(10);
             ds.setTestWhileIdle(true);
 
+
             return ds;
         }
 
         @Bean
-        public PlatformTransactionManager transactionManager () {
+        public PlatformTransactionManager transactionManager() {
             return new DataSourceTransactionManager(dataSource());
         }
 
         @Bean
-        public SqlSessionFactory sqlSessionFactory () throws Exception{
+        public SqlSessionFactory sqlSessionFactory() throws Exception {
             SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
             sessionFactoryBean.setDataSource(dataSource());
 

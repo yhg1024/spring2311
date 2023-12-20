@@ -5,56 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6276c6-26db-44f9-8252-18de6ff05658" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/commons/CommonException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configs/CommonInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configs/DbConfig2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/configs/MemberOnlyInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/MemberController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/admin/MemberSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/file/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/member/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/member/LoginValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/member/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/member/MemberNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/admin/member/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/error/common.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/file/upload.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/mypage/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/파일업로드.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/configs/FileProperty.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/src/main/java/org/choongang/Exam01Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../5.스프링부트/exam01/src/test/java/org/choongang/Exam01ApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commons/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commons/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/configs/DbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configs/DbConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/configs/DbConfig2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configs/DbConfig2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/configs/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/configs/MvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/member/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/member/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/member/RequestLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/member/RequestLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mapper/MemberMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mapper/MemberMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/member/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/member/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logbak.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logbak.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages/commons.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages/commons.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages/validations.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages/validations.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/member/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/member/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/outlines/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/outlines/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/outlines/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/outlines/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/JoinServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/JoinServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/OOP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/OOP/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/OOP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/OOP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/streamex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../수업 정리/스트림.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/스트림.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../수업 정리/웹 MVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/웹 MVC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/파일업로드.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/파일업로드.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +79,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/yhg1024/3.스프링/spring_study/exam07/src&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/yhg1024/5.스프링부트/exam01&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
 }</component>

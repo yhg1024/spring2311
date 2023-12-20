@@ -21,19 +21,20 @@ import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 
 @Configuration
 @EnableWebMvc
-@Import(DbConfig.class)
-public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목을 제공
+@Import(DbConfig2.class)
+public class MvcConfig implements WebMvcConfigurer {
 
     @Autowired
     private ApplicationContext applicationContext;
-
-    // 전역 validator
-    /*private JoinValidator joinValidator;
+    /*
+    @Autowired
+    private JoinValidator joinValidator;
 
     @Override
     public Validator getValidator() {
         return joinValidator;
-    }*/
+    }
+    */
 
     @Bean
     public MemberOnlyInterceptor memberOnlyInterceptor() {
@@ -49,6 +50,7 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(memberOnlyInterceptor())
                 .addPathPatterns("/mypage/**");
+
         registry.addInterceptor(commonInterceptor())
                 .addPathPatterns("/**");
     }
@@ -57,20 +59,23 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
         // 모든 요청 -> 컨트롤러 빈, 없는 경우 -> 정적 자원 경로(css, js, 이미지)
+
     }
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/**") // /** 기본경로에서 하위경로를 포함한 모든 경로
+        registry.addResourceHandler("/**") // 모든 경로
                 .addResourceLocations("classpath:/static/");
+
         registry.addResourceHandler("/upload/**")
-                .addResourceLocations("file:///c:/uploads/"); // 자원 조회
+                .addResourceLocations("file:///c:/uploads/");
     }
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/")
                 .setViewName("main/index");
+
         registry.addViewController("/mypage/**")
                 .setViewName("mypage/index");
     }
@@ -81,9 +86,10 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
         templateResolver.setApplicationContext(applicationContext);
         templateResolver.setPrefix("/WEB-INF/templates/");
         templateResolver.setSuffix(".html");
-        templateResolver.setCacheable(false); // 캐시데이터
-        // true -> 최초 로딩시 번역, 다음 요청시에는 기존 파일을 그대로 사용(실 사용중 서버)
+        templateResolver.setCacheable(false);
+        // true -> 최초 로딩시 번역, 다음 요청시에는 기존 파일을 그대로 사용 (실 사용중 서버)
         // false -> 매번 요청시마다 다시 번역 (개발 중)
+
         return templateResolver;
     }
 
@@ -91,8 +97,8 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
     public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
-        templateEngine.setEnableSpringELCompiler(true); // EL식
-        templateEngine.addDialect(new Java8TimeDialect()); // Dialect : 확장기능, Date Time API(java.time 패키지) - #temporals
+        templateEngine.setEnableSpringELCompiler(true);
+        templateEngine.addDialect(new Java8TimeDialect()); // Date Time API(java.time 패키지) - #temporals
         templateEngine.addDialect(new LayoutDialect()); // 레이아웃 기능 추가
         return templateEngine;
     }
@@ -111,8 +117,6 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
         registry.viewResolver(thymeleafViewResolver());
     }
 
-
-
     @Bean
     public MessageSource messageSource() {
         ResourceBundleMessageSource ms = new ResourceBundleMessageSource();
@@ -130,9 +134,11 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
     @Bean
     public static PropertySourcesPlaceholderConfigurer configurer() {
         PropertySourcesPlaceholderConfigurer conf = new PropertySourcesPlaceholderConfigurer();
+
         conf.setLocations(
                 new ClassPathResource("application.properties")
         );
+
         return conf;
     }
 }

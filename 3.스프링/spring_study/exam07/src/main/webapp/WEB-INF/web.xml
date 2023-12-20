@@ -8,9 +8,9 @@
         <servlet-name>dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
-            <param-name>contextClass</param-name> <!--스프링 관리 객체-->
+            <param-name>contextClass</param-name>
             <param-value>
-                org.springframework.web.context.support.AnnotationConfigWebApplicationContext <!--web이 포함된 관리 객체-->
+                org.springframework.web.context.support.AnnotationConfigWebApplicationContext
             </param-value>
         </init-param>
         <init-param>
@@ -22,11 +22,11 @@
         </init-param>
         <init-param>
             <param-name>spring.profiles.active</param-name>
-            <param-value>dev</param-value>
+            <param-value>prod</param-value>
         </init-param>
         <multipart-config>
             <max-file-size>20971520</max-file-size>
-            <max-request-size>62914560</max-request-size> <!--60mb-->
+            <max-request-size>62914560</max-request-size>
         </multipart-config>
     </servlet>
     <servlet-mapping>
@@ -49,4 +49,3 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 </web-app>
-
