@@ -117,4 +117,16 @@ Ant 경로 패턴
 - HandlerAdapter : DispatcherServlet과 핸들러 객체 사이의 변환을 알맞게 처리해 준다.
 - ViewResolver : 요청 처리 결과를 생성할 View를 찾아주고 View는 최종적으로 클라이언트에 응답을 생성해서 전달한다.
 
-스프링 컨테이너 : 객체 관리하는 
+3. 컨트롤러 익셉션 처리하기
+1) @ExceptionHandler
+    - 발생 예외를 정의
+    - 예외발생시 특정 페이지를 노출
+    - 메서드에 자동 주입
+        - 발생한 예외 객체
+        - Model
+        - HttpServletRequest
+        - HttpServletResponse
+        - HttpSession
+
+2) @ControllerAdvice
+    - 컨트롤러 실해 전 공통 기능

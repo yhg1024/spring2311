@@ -9,7 +9,9 @@ import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.context.support.ResourceBundleMessageSource;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.validation.Validator;
 import org.springframework.web.servlet.config.annotation.*;
 import org.thymeleaf.extras.java8time.dialect.Java8TimeDialect;
@@ -33,6 +35,24 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
         return joinValidator;
     }*/
 
+    @Bean
+    public MemberOnlyInterceptor memberOnlyInterceptor() {
+        return new MemberOnlyInterceptor();
+    }
+
+    @Bean
+    public CommonInterceptor commonInterceptor() {
+        return new CommonInterceptor();
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(memberOnlyInterceptor())
+                .addPathPatterns("/mypage/**");
+        registry.addInterceptor(commonInterceptor())
+                .addPathPatterns("/**");
+    }
+
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
@@ -43,12 +63,16 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/**") // /** 기본경로에서 하위경로를 포함한 모든 경로
                 .addResourceLocations("classpath:/static/");
+        registry.addResourceHandler("/upload/**")
+                .addResourceLocations("file:///c:/uploads/"); // 자원 조회
     }
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/")
                 .setViewName("main/index");
+        registry.addViewController("/mypage/**")
+                .setViewName("mypage/index");
     }
 
     @Bean
@@ -101,5 +125,14 @@ public class MvcConfig implements WebMvcConfigurer { // 주요 Mvc 설정 항목
     @Bean
     public Utils utils() {
         return new Utils();
+    }
+
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer configurer() {
+        PropertySourcesPlaceholderConfigurer conf = new PropertySourcesPlaceholderConfigurer();
+        conf.setLocations(
+                new ClassPathResource("application.properties")
+        );
+        return conf;
     }
 }

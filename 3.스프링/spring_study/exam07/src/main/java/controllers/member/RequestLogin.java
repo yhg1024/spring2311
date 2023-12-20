@@ -1,8 +1,10 @@
 package controllers.member;
 
-public record RequestLogin(
-        String userId,
-        String userPw
-) {
+import jakarta.validation.constraints.NotBlank;
 
-}
+public record RequestLogin(
+        @NotBlank
+        String userId,
+        @NotBlank
+        String userPw
+) {}

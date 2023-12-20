@@ -187,6 +187,7 @@ Bean Validator 2.0이 추가로 제공하는 애노테이션
      - void removeAttribute(String name) // 특정 키값만 지운다.
      - invalidate() : 세션 비우기
 2. 인터셉터
+- 특정 실행흐름을 가로채서 공통적인 부분을 실행
    1) HandlerInterceptor 인터페이스
    - boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception;
      : 컨트롤러 빈 실행 전 호출
@@ -249,3 +250,33 @@ same-site : 같은 사이트끼리만 쿠키공유
 @CookieValue 쿠키명과 동일한 변수명
 - 쿠키 개별 조회
 - 특정 변수에 주입, 형변환도 자동
+
+통합테스트
+- MockMvc
+
+1. 날짜 값 변환
+   @DateTimeFormat
+- LocalDate, LocalTime, LocalDateTime .. - JSR310 - Date & Time API
+- 형식이 일치 하지 않으면 예외 발생
+    - 메세지 코드 typeMismatch
+      - 메세지코드
+      - 메세지코드.필드명
+      - 메세지코드.커맨드 객체명.필드명
+      - 메세지코드.자료형 타입
+      - 메세지코드.커맨드 객체명.자료형 타입
+    - typeMismatch.java.LocalDate
+
+2. @PathVariable : 경로 변수
+
+3. 컨트롤러 익셉션 처리하기
+   1) @ExceptionHandler
+       - 발생 예외를 정의
+       - 예외발생시 특정 페이지를 노출
+       - 메서드에 자동 주입
+           - 발생한 예외 객체
+           - Model
+           - HttpServletRequest
+           - HttpServletResponse
+           - HttpSession
+
+   2) @ControllerAdvice

@@ -15,4 +15,22 @@
     <select id="get" resultType="models.member.Member">
         SELECT * FROM MEMBER WHERE USER_ID=#{userId}
     </select>
+
+    <select id="getList" resultType="models.member.Member">
+        SELECT * FROM MEMBER
+        <where>
+            <if test="sdate != null">
+                <![CDATA[
+                REG_DT >= #{sdate}
+                ]]>
+            </if>
+            <if test="edate != null">
+                <![CDATA[
+                AND REG_DT < #{edate}
+                ]]>
+            </if>
+        </where>
+        ORDER BY REG_DT DESC
+
+    </select>
 </mapper>
