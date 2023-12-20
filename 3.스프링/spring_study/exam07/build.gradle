@@ -42,6 +42,7 @@ dependencies {
     implementation 'org.mindrot:jbcrypt:0.4' // 암호화 - https://central.sonatype.com/artifact/org.mindrot/jbcrypt
     implementation 'org.mybatis:mybatis-typehandlers-jsr310:1.0.2' /* mybatis jsr310 */
 
+    /*lombk*/
     compileOnly 'org.projectlombok:lombok:1.18.30' /*lombok*/
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
 

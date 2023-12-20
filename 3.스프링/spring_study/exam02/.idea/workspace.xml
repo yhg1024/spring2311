@@ -5,68 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24911823-fd62-447a-b804-398227b914e8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/main/Ex06.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/main/Ex07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/CachedMemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/JoinService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/ListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/ServiceManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/commons/exceptions/BadRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/commons/validators/RequiredValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/commons/validators/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/config/AppCtx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/config/AppCtx2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/config/AppCtx3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/main/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/Greeter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/JoinService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/JoinValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/ListService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/Member.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/MemberDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/Wrapper.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/src/exam01/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/src/exam01/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/src/exam01/Ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/src/exam01/Ex04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/Wrapper/src/exam01/Ex05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/annotation/annotationex/annotationex.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/annotation/annotationex/src/exam01/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/annotation/annotationex/src/exam01/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/annotation/annotationex/src/exam01/MyAnno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/enumex/enumex/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/enumex/enumex/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/enumex/enumex/enumex.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/enumex/enumex/src/exam01/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/enumex/enumex/src/exam01/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/enumex/enumex/src/exam01/Ex03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/enumex/enumex/src/exam01/Ex04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/enumex/enumex/src/exam01/Transportation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/.idea/수업 정리.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/annotation.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/프로젝트 만들기.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam01/src/main/java/commons/validators/RequiredValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/src/main/java/commons/validators/RequiredValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam01/src/main/java/models/member/JoinValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/JoinValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam01/src/main/java/models/member/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/src/main/java/models/member/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam01/src/main/java/models/member/joinService.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam01/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exam05/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exam05/Ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../수업 정리/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/Spring.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../수업 정리/enums.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/enums.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/src/main/java/configs/ControllerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/src/main/java/configs/ControllerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/src/main/java/configs/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/src/main/java/configs/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/lambdaex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/lambdaex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/streamex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/스트림.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/스트림.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +56,8 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/yhg1024/3.스프링/spring_study/exam03&quot;
   }
 }</component>
   <component name="RunManager" selected="Application.exam05.Ex03">

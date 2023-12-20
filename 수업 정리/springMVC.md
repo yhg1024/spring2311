@@ -1,17 +1,22 @@
 스프링 MVC 시작하기
+- Model : 비지니스 로직 처리, 서비스, DAO
+- View : 모델에서 산출된 결과물을 화면에 보여주는 응답 부분
+- Controller : 사용자의 요청을 감지(적절한 모델과 뷰를 찾는다.)해서 처리
+
+스프링은 기존에 있던 틀에서 조금 더 코딩을 쉽게 하기 위해 틀이 이미 구성되어 있는것 그걸 의존성으로 연결
+
 1. 스프링 MVC를 위한 설정
 1) 실습에 플요한 의존성
-- spring webmvc
-- servlet-api
-- servlet.jsp-api
-- spring-jdbc
-- tomcat-jdbc
-- mybatis
-- mybatis-spring
-
+- spring webmvc : implementation "org.springframework:spring-webmvc:6.1.1
+- servlet-api : compileOnly 'jakarta.servlet:jakarta.servlet-api:6.0.0'
+- servlet.jsp-api : compileOnly 'jakarta.servlet.jsp:jakarta.servlet.jsp-api:3.1.1'
+- jstl
+- spring-jdbc : implementation 'org.springframework:spring-jdbc:6.1.1'
+- tomcat-jdbc : implementation 'org.apache.tomcat:tomcat-jdbc:10.1.16'
+- mybatis : implementation 'org.mybatis:mybatis:3.5.14'
+- mybatis-spring : implementation 'org.mybatis:mybatis-spring:3.0.3'
 - slf4j-api
 - logbak-classic
-
 - lombok
 
 1) 컨트롤러 구현

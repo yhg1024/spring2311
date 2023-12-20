@@ -20,7 +20,7 @@ import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring6.view.ThymeleafViewResolver;
 
 @Configuration
-@EnableWebMvc
+@EnableWebMvc // 스프링 MVC를 사용하는데 필요한 다양한 설정을 생성
 @Import(DbConfig2.class)
 public class MvcConfig implements WebMvcConfigurer {
 
@@ -59,6 +59,7 @@ public class MvcConfig implements WebMvcConfigurer {
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
         configurer.enable();
         // 모든 요청 -> 컨트롤러 빈, 없는 경우 -> 정적 자원 경로(css, js, 이미지)
+        // DispatcherServlet의 매핑 경로를 '/'로 주었을 때, JSP/HTML/CSS 등을 올바르게 처리하기 위한 설정을 추가한다.
 
     }
 
@@ -69,6 +70,8 @@ public class MvcConfig implements WebMvcConfigurer {
 
         registry.addResourceHandler("/upload/**")
                 .addResourceLocations("file:///c:/uploads/");
+
+        //CSS, JS, 이미지 등등 정적인 지원들을 저장할 경로를 지정한다
     }
 
     @Override
@@ -115,6 +118,7 @@ public class MvcConfig implements WebMvcConfigurer {
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         registry.viewResolver(thymeleafViewResolver());
+        //JSP를 이용해서 컨트롤러 실행 결과를 보여주기 위한 설정을 추가한다.
     }
 
     @Bean

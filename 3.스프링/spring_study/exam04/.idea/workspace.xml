@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74fcae7a-a4b9-4e90-9993-f4741461ffd6" name="Changes" comment="스프링">
-      <change afterPath="$PROJECT_DIR$/../../../수업 정리/AOP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam03/src/main/java/models/member/ListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam03/src/main/java/models/member/ListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/AppCtx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/AppCtx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/main/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/member/JoinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/member/JoinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/member/MemberDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/member/MemberDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../수업 정리/Spring.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/Spring.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex08.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Ex09.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex05.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam04/Ex06.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam01/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../exam01/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam02/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/src/main/java/configs/ControllerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/src/main/java/configs/ControllerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/src/main/java/configs/MvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/src/main/java/configs/MvcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exam07/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam07/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/lambdaex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/lambdaex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/streamex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/streamex/src/exam03/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../수업 정리/스트림.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/스트림.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,19 +72,20 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/yhg1024/3.스프링/spring_study/exam05",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\yhg1024\3.스프링\spring_study\exam04\src\main\java" />
