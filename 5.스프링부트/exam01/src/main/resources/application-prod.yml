@@ -1,0 +1,22 @@
+# 배포할때
+server:
+  port: 4000
+  # 값 뒤에는 한칸 띄어야한다.
+
+spring:
+  # 데이터베이스 설정
+  datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: SPRING6
+    password: _aA123456
+
+  # 라이브 리로드 설정
+  devtools:
+    livereload:
+      enabled: true
+
+  # 타임리프
+  thymeleaf:
+    cache: true
+    prefix: classpath:/templates/

@@ -1,0 +1,49 @@
+# 개발할때 (공통)
+server:
+  port: 3000
+  # 값 뒤에는 한칸 띄어야한다.
+
+spring:
+  # 프로필 설정 ( 설정파일 분리 )
+  #profiles:
+  #  active: dev
+
+  # 파일 업로드 설정
+  servlet:
+    multipart:
+      maxFileSize: 20MB # 파일 하나당 최대 용량
+      maxRequestSize: 60MB # 전체 파일 최대 용량
+
+  # 정적 자원 설정(CSS, JS, 이미지)
+  web:
+    resources:
+      staticLocations: file:src/main/resources/static/
+
+  # 데이터베이스 설정
+  datasource:
+    driverClassName: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: SPRING6
+    password: _aA123456
+
+  # 라이브 리로드 설정
+  devtools:
+    livereload:
+      enabled: true
+
+  # 타임리프
+  thymeleaf:
+    cache: false
+    prefix: file:src/main/resources/templates/
+
+# 파일 설정
+file:
+  url: /upload/
+  path: C:/uploads/
+
+# 로거 설정
+logging:
+  level:
+    org:
+      springframework:
+        jdbc: trace
