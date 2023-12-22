@@ -32,6 +32,7 @@ java.io
         - DataOutputStream : 기본 자료형을 데이터 쓰기 기능 부여
       - ObjectOutputSteam : 객체를 쓸 수 있도록 변환 기능 추가
 
+
 문자기반 스트림 : 데이터 크기가 문자 단위(유니코드 - 2, 3 바이트)
 1. 입력 스트림 - Reader
 2. 출력 스트림 - Writer
