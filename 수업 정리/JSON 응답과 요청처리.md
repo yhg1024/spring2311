@@ -12,9 +12,9 @@ JSON 응답과 요청 처리
 - JSON(JavaScript Object Notation) : 자바스크립트 객체 표기법(문자열)
 ```json
   {
-  "이름" : "값",
-  "이름" : "값"
-  ...
+      "이름" : "값",
+      "이름" : "값"
+      ...
 }
 
 ```
@@ -57,15 +57,28 @@ JSON 응답과 요청 처리
 - @Log
 - @Log4J
 - @Slf4j
-- log 변수 생성
-- trace
-- debug
-- info
-- warn
-- error
+  - log 변수 생성
+    - trace
+    - debug
+    - info
+    - warn
+    - error
 
 
 4. @RequestBody JSON 요청 처리
+<img src="../img/advencedREST1.png">
+<img src="../img/advencedREST2.png">
+- application/json 형식의 요청 데이터 변환
+```json
+    {
+        "키" = "값"
+        "키" = "값"
+    }
+```
+- 참고)
+  - 기본 형식
+    - application/x-www-form-urlencoded
+      - 키=값&키=값
 5. JSON 데이터의 날짜 형식 다루기
 1) @JsonFormat
 
@@ -80,9 +93,15 @@ JSON 응답과 요청 처리
 3) build() : 응답 BODY 데이터가 없는 경우
 
 
-4) noContent()
-5) badRequest()
-6) notFound()
+4) noContent() 204
+5) badRequest() 400
+6) notFound() 404
+7) ok(), ok(T body) 200
+8) created(Uri location) / 201 + 응답 헤더 Location: 주소
+
+에러 메세지
+- 어떤 페이지 : message : 에러메세지
+- 다른 페이지 : memo : 에러메세지
 
 
 참고)
@@ -125,3 +144,4 @@ JSON 응답과 요청 처리
 		timestamp
 		status : 상태 코드 
 		error
+
