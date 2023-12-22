@@ -19,7 +19,7 @@ java.io
      - int read() // 1바이트, (0 ~ 255), -1 -> 바이트 보다 더 큰 자료형 필요해서 기본자료형인 int를 사용
    - 보조 스트림 : 직접 데이터에 접근 x, 다른 스트림에 추가적인 기능을 부여, 데코레이터 패턴
      - FilterInputStream의 하위 클래스
-       - BufferedInputStream : 버퍼기능 추가
+       - BufferedInputStream : 버퍼기능 추가(8kb - 기본 버퍼 사이즈)
        - DataInputStream : 기본 자료형으로 데이터 읽기 기능 부여
      - ObjectInputStream : 객체를 읽을 수 있도록 변환 기능 추가
 2. 출력 스트림 - OutputStream
@@ -28,7 +28,7 @@ java.io
       - ByteArrayOutputStream : 메모리에 출력
     - 보조 스트림 : 직접 데이터에 접근x, 다른 스트림에 추가적인 기능 부여, 데코에이터 패턴
       - FilterOutputStream 하위 클래스
-        - BufferedOutputStream : 버퍼기능 추가
+        - BufferedOutputStream : 버퍼기능 추가(8kb - 기본값)
         - DataOutputStream : 기본 자료형을 데이터 쓰기 기능 부여
       - ObjectOutputSteam : 객체를 쓸 수 있도록 변환 기능 추가
 

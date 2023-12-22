@@ -1,0 +1,20 @@
+package org.choongang.entities;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+
+@Data
+@Entity
+public class Member {
+    @Id
+    private Long seq;
+    private String email;
+    private String name;
+    private String password;
+    private LocalDateTime createAt;
+    private LocalDateTime modifiedAt;
+
+}

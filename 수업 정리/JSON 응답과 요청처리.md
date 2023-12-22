@@ -1,4 +1,4 @@
-JSON 응답과 요청 처리
+# JSON 응답과 요청 처리
 
 1. JSON 개요
 - REST API(Application Programming Interface)
@@ -13,7 +13,7 @@ JSON 응답과 요청 처리
 ```json
   {
       "이름" : "값",
-      "이름" : "값"
+      "이름" : "값",
       ...
 }
 
@@ -21,6 +21,11 @@ JSON 응답과 요청 처리
 
 2. Jackson 의존 설정
    1) jackson-databind
+      - ObjectMapper
+        - 자바 객체 -> JSON 문자열로 변환 : writeAsString(...)
+        - JSON 문자열 -> 자바 객체 변환 : readValue(...)
+          - readValue (String content, Class<?> cls) : 단일 클래스
+          - readValue (String content, TypeReference ...) : 
    2) jackson-data-type-jsr-310 : Java Date & Time API,
 
 3. **@RestController로 JSON 형식 응답**

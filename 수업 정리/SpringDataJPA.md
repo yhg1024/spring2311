@@ -2,15 +2,19 @@
 
 1. JPA 동작 방식
 0) ORM : 객체 <- 번역(ORM) -> DB
+- DB에 맞는 쿼리 해석
+
+<img src="../img/image8.png">
 
 
 1) JPA란?
-JPA (Java Persistence API) : ORM 표준 (Object Relational Mapping)
-Hibernate Entity Manager
+- JPA (Java Persistence API) : ORM 표준 (Object Relational Mapping)
+- Hibernate Entity Manager
 
+<img src="../img/image9.png">
 
 - 자바 영속성 API
-- 영속성 : 상태 변화 감지 메모리
+- 영속성 : 상태 변화 감지 메모리 (Persistence Context)
 	: 데이터 값이 변경 : UPDATE 쿼리
 	: 없는 데이터를 추가한 엔티티 : INSERT 쿼리
 	: 데이터 제거 : DELETE 쿼리

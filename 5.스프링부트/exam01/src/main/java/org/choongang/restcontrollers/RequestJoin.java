@@ -1,7 +1,10 @@
 package org.choongang.restcontrollers;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
+
+import java.time.LocalDateTime;
 
 @Data
 public class RequestJoin {
@@ -18,4 +21,7 @@ public class RequestJoin {
     @NotBlank(message = "회원명을 입력하세요.")
     private String userNm;
     private String email;
+
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    private LocalDateTime regDt;
 }
