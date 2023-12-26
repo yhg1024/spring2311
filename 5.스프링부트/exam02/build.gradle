@@ -26,12 +26,12 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	runtimeOnly 'com.oracle.database.jdbc:ojdbc11:23.3.0.23.09'
 	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:3.3.0'
 
-	implementation 'com.oracle.database.jdbc:ojdbc11:23.3.0.23.09'
+	runtimeOnly 'com.oracle.database.jdbc:ojdbc11:23.3.0.23.09'
+	implementation 'com.oracle.database.nls:orai18n:23.3.0.23.09'
 
-	annotationProcessor 'jakarta.annnotation:jakarta.annotation-api'
+	annotationProcessor 'jakarta.annotation:jakarta.annotation-api'
 	annotationProcessor 'jakarta.persistence:jakarta.persistence-api'
 
 	compileOnly 'org.projectlombok:lombok'
