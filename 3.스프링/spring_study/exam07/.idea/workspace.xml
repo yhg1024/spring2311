@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cc6276c6-26db-44f9-8252-18de6ff05658" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../exam06/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam06/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exam06/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/OOP/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/OOP/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../4.자바보강/OOP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../4.자바보강/OOP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../../수업 정리/springMVC.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,16 +58,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/app/Java/spring2311",
-    "settings.editor.selected.configurable": "settings.sync"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/app/Java/spring2311&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\yhg1024\3.스프링\spring_study\exam07\src\main\webapp" />
@@ -152,9 +147,6 @@
       <option name="catalinaBase" value="C:\Users\admin\.SmartTomcat\exam07\exam07.main" />
       <option name="contextPath" value="/exam07" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
       <option name="port" value="3000" />
       <option name="tomcatInfo">
