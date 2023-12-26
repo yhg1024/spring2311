@@ -21,6 +21,7 @@ java.io
      - FilterInputStream의 하위 클래스
        - BufferedInputStream : 버퍼기능 추가(8kb - 기본 버퍼 사이즈)
        - DataInputStream : 기본 자료형으로 데이터 읽기 기능 부여
+     - InputStreamReader(InputStream in) : 바이트 단위 읽기 스트림 - 문자 단위 스트림 변환
      - ObjectInputStream : 객체를 읽을 수 있도록 변환 기능 추가
 2. 출력 스트림 - OutputStream
     - 기반 스트림 : 직접 데이터에 접근하는 스트림
@@ -30,17 +31,22 @@ java.io
       - FilterOutputStream 하위 클래스
         - BufferedOutputStream : 버퍼기능 추가(8kb - 기본값)
         - DataOutputStream : 기본 자료형을 데이터 쓰기 기능 부여
+      - OutputStreamWriter(OutputStream out) : 바이트 단위 쓰기 스트림 -> 문자 단위 쓰기 스트림 변경
       - ObjectOutputSteam : 객체를 쓸 수 있도록 변환 기능 추가
 
 
 문자기반 스트림 : 데이터 크기가 문자 단위(유니코드 - 2, 3 바이트)
 1. 입력 스트림 - Reader
+   - 기반 스트림 : FileReader, CharArrayReader, StringReader ...
+   - 보조 스트림 : BufferedREader - 다른 스트림에 버퍼라는 추가 기능
 2. 출력 스트림 - Writer
-
+    - 기반 스트림 : FileWriter, CharArrayWriter, StringWriter ...
+      - PrintStream, PrintWriter
+    - 보조 스트림 : BufferedWriter - 다른 스트림에 버퍼라는 추가 기능
 
 표준입출력 : 콘솔에 입력, 출력
-1. System.in : InputStream
-2. System.out : PrintStream
+1. System.in : InputStream : 콘솔에서 데이터를 입력 받는 스트림
+2. System.out : PrintStream : 문자 단위 스트림(PrintWriter)
 3. System.err : PrintStream
 
 File
