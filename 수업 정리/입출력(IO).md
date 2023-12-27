@@ -21,6 +21,7 @@ java.io
      - FilterInputStream의 하위 클래스
        - BufferedInputStream : 버퍼기능 추가(8kb - 기본 버퍼 사이즈)
        - DataInputStream : 기본 자료형으로 데이터 읽기 기능 부여
+         - 파일의 끝에 도달한 경우 예외 발생 : EOFException (EOF - End Of File)
      - InputStreamReader(InputStream in) : 바이트 단위 읽기 스트림 - 문자 단위 스트림 변환
      - ObjectInputStream : 객체를 읽을 수 있도록 변환 기능 추가
 2. 출력 스트림 - OutputStream
