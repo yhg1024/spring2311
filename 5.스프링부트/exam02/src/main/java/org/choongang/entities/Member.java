@@ -39,7 +39,7 @@ public class Member extends Base{
 
     @Enumerated(EnumType.STRING)
     @Column(length = 10)
-    private MemberType type;
+    private MemberType type; // ADMIN, MEMBER
 
     // @CreationTimestamp // INSERT SQL 실행시
     // @CreatedDate
