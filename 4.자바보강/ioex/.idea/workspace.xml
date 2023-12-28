@@ -5,38 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1a20ec4-24f8-480f-801c-bbce91dbf5c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/book.obj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/score.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam03/Ex07.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam04/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam04/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam04/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/generated/org/choongang/entities/QAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/generated/org/choongang/entities/QBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/generated/org/choongang/entities/QBoardData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/generated/org/choongang/entities/QBoardView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/generated/org/choongang/entities/QHashTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/generated/org/choongang/entities/QMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/HashTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/repositories/AddressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/repositories/HashTagRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex05Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex06Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex07Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex08Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../수업 정리/.idea/markdown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex09Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../수업 정리/스프링 시큐리티.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exam03/Ex06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exam03/Ex06.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/Base.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/BoardData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/BoardData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exam04/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exam04/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../streamex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../streamex/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/repositories/BoardDataRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/repositories/BoardDataRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/repositories/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/repositories/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex04TEst.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex04TEst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/Repository.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/Repository.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex08Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex08Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../수업 정리/Repository.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../수업 정리/스프링부트.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/스프링부트.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../수업 정리/입출력(IO).md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/입출력(IO).md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,16 +42,16 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/yhg1024/4.자바보강/ioex/test1.txt",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/yhg1024/4.자바보강/ioex/test1.txt&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\yhg1024\4.자바보강\ioex" />

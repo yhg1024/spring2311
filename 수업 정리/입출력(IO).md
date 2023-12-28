@@ -50,7 +50,13 @@ java.io
 2. System.out : PrintStream : 문자 단위 스트림(PrintWriter)
 3. System.err : PrintStream
 
-File
+File : 파일/디렉토리 다룰때 사용한다.
+- pathSeparator : 환경 변수 구분 문자
+  - 리눅스, 맥 : -> :
+  - 윈도우즈 : -> ;
+- separator : 디렉토리 구분문자
+  - 리눅스, 맥 : ->
+  - 윈도우즈 : ->
 
 
 직렬화(Serialization)

@@ -42,8 +42,10 @@ public class Member extends Base{
     private MemberType type; // ADMIN, MEMBER
 
     @ToString.Exclude
-    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY) // mappedBy 관계의 주인을 정해준다.
+    @OneToMany(mappedBy = "member", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE)
+    // mappedBy 관계의 주인을 정해준다.
     // fetch = FetchType.EAGER 즉시 로딩
+    // cascade = CascadeType.REMOVE 부모 엔티티가 삭제될 때 연된된 자식 엔티티도 삭제
     private List<BoardData> items = new ArrayList<>();
 
     @OneToOne(fetch = FetchType.LAZY) // 즉시 로딩

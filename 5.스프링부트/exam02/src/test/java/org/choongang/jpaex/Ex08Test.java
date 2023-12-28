@@ -1,5 +1,7 @@
 package org.choongang.jpaex;
 
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 import org.choongang.entities.BoardData;
 import org.choongang.entities.HashTag;
 import org.choongang.repositories.BoardDataRepository;
@@ -9,11 +11,13 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootTest
+@Transactional
 @TestPropertySource(properties = "spring.profiles.active=test")
 public class Ex08Test {
     
@@ -22,6 +26,9 @@ public class Ex08Test {
     
     @Autowired
     private HashTagRepository hashTagRepository;
+
+    @PersistenceContext
+    private EntityManager em;
 
     @BeforeEach
     void init() {
@@ -32,7 +39,7 @@ public class Ex08Test {
             tags.add(tag);
         }
 
-        hashTagRepository.saveAllAndFlush(tags);
+        hashTagRepository.saveAllAndFlush(tags); // 영속성 메모리에 저장
 
         List<BoardData> items = new ArrayList<>();
         for (int i = 1; i <= 5; i++) {
@@ -44,6 +51,7 @@ public class Ex08Test {
         }
 
         boardDataRepository.saveAllAndFlush(items);
+        em.clear(); // 영속성 비우기
     }
 
     @Test
