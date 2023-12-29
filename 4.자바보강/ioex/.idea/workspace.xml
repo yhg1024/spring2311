@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1a20ec4-24f8-480f-801c-bbce91dbf5c1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex09Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../수업 정리/스프링 시큐리티.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exam04/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exam04/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../streamex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../streamex/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/main/java/org/choongang/entities/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex08Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../5.스프링부트/exam02/src/test/java/org/choongang/jpaex/Ex08Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/Repository.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/스프링부트.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/스프링부트.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/입출력(IO).md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/입출력(IO).md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../수업 정리/날짜와시간.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../수업 정리/서버 구축.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../수업 정리/스프링 시큐리티.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/스프링 시큐리티.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
