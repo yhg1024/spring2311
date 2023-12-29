@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8474c1f-f778-4a42-90c3-2270ee346c51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/datetimeex.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam01/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam01/Ex02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exam02/Ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../수업 정리/날짜와시간.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../수업 정리/서버 구축.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ioex/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ioex/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../수업 정리/스프링 시큐리티.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../수업 정리/스프링 시큐리티.md" afterDir="false" />
-    </list>
+    <list default="true" id="b8474c1f-f778-4a42-90c3-2270ee346c51" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
