@@ -1,8 +1,10 @@
-package commons;
+package member.controllers;
 
-import member.controllers.Member;
+import commons.RequiredValidator;
+import commons.Validator;
+import member.service.BadRequestException;
 
-public class Joinvalidator implements Validator<Member>, RequiredValidator {
+public class JoinValidator implements Validator<Member>, RequiredValidator {
     @Override
     public void check(Member member) {
         String userId = member.getUserId();
@@ -10,6 +12,9 @@ public class Joinvalidator implements Validator<Member>, RequiredValidator {
         String confirmPw = member.getConfirmPw();
         String userNm = member.getUserNm();
 
-
+        checkRequired(userId, new BadRequestException("아이디를 입력하세요."));
+        checkRequired(userPw, new BadRequestException("비밀번호를 입력하세요."));
+        checkRequired(confirmPw, new BadRequestException("비밀번호를 확인하세요."));
+        checkRequired(userNm, new BadRequestException("회원명을 입력하세요."));
     }
 }

@@ -1,0 +1,17 @@
+.wrap { 
+    background: skyblue;
+    &:hover {
+        background: blue;
+    }
+
+    .on {
+        border: 2px solid black;
+    }
+}
+
+:global .title {
+    color: red;
+    &.on {
+        border: 2px solid black;
+    }
+}
